@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="/static/style.css" rel="stylesheet">
+		<title>Questionnaire</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	</head>
+<body style="margin: 5% 10% 5% 15%">
+	<p><i>{{instructions|safe}}</i></p>
+	<p><i>If you miss a question, you will be sent back to review the instructions and re-take the test. You must get all questions correct before you can move on to the practice round of the task.</i></p>
+	
+	<form method="POST" style="padding: 0px 30px;">
+		<table>
+		{% for i in range(0,info|length) %}
+			{% set q_a_pair = info[i] %}
+			{% for q, a in q_a_pair.items() %}
+				<tr>
+				<td align="left"></td>
+				{% for option in a %}
+				<td style="width:{{widthPercent}}%"><br><br><center>{{ option }}</center></td>		
+				{% endfor %}
+				</tr>
+
+				<input type="hidden" name={{"q"+(i+1)|string}} value="{{ q }}">
+				
+				<tr>
+				<td>{{i+1}}. {{ q }}</td>
+				<input type="hidden" name={{"q"+(i+1)|string}} value="{{ q }}">
+				{% for option in a %}
+				<td><center><input type="radio" name={{"a"+(i+1)|string}} value="{{option}}" required></center></td>
+				{% endfor %}
+				</tr> 
+			{% endfor %}
+		{% endfor %}
+		</table>
+
+		<br>
+		<center><input type="submit" value="Submit" class="btn btn-default"></center>
+		<br>
+	</form>
+</body>
+</html>

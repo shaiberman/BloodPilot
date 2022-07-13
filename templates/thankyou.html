@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title> Thank You! </title>
+	<link href="/static/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	</head>
+	
+	<h2 style="text-align: center">Thank you for participating in this study!</h2>
+	<h3 style="text-align: center"> Please make sure to click the button below to submit the HIT. </h3>
+
+	<center>
+	{% if live %}
+		<form method="POST" action="https://www.mturk.com/mturk/externalSubmit">
+	{% else %}
+		<form method="POST" action="https://workersandbox.mturk.com/mturk/externalSubmit">
+	{% endif %}
+		<input type="hidden" name="assignmentId" value="{{ assignmentId }}">
+		<input type="hidden" name="exp" value="food"> 
+		<input type="submit" value="Submit HIT" class="btn btn-default">
+	</form>
+</center>
+</html>

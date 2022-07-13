@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Rating Task</title>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+	<!-- css -->
+	<link rel='stylesheet' type='text/css' href='/static/dmstudies/jspsych_myStyle.css'>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="jspsych-display-element">
+	<div id="content-wrapper" class="jspsych-content-wrapper">
+		<div id="content" class="jspsych-content"></div>
+	</div>
+
+	<div>
+	<canvas id="myCanvas" style="padding: 0; margin: auto; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; visibility: hidden;">
+	</canvas>
+	</div>
+
+	<div>
+	<svg id="mySVG" style="padding: 0; margin: auto; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; visibility: hidden;"></svg>
+	</div>
+
+	<form id="exp" method="POST">
+		<input type="hidden" id="experimentResults" name="experimentResults" value="[]">
+
+		<script src="{{ url_for('static', filename='components.js') }}"></script>
+		<script src="{{ url_for('static', filename='page_interaction_tracker.js') }}"></script>
+		<script src="{{ url_for('static', filename='dmstudies/run_foodratingtask.js') }}"></script>
+
+		<script>
+			document.querySelector('html').style.height = '100%';
+			document.querySelector('body').style.margin = '0px';
+			document.querySelector('body').style.height = '100%';
+			document.querySelector('body').style.width = '100%';
+
+			var expVariables={{expVariables|tojson|safe}};
+			var stimFolder = {{stimFolder|tojson|safe}};
+			// curly brackets are for jinja2 templates, which returns expVariables from app.py
+		</script>
+	</form>
+</body>
+</html>

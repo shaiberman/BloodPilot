@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food Rating Task Instructions</title>
+	<link href="/static/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	
+	<form method="POST">
+	<center>
+		<br>
+	<p>
+	The next part of the experiment will be the full version of the task. You can review the instructions below.
+	</p>
+	<p>
+	If you would like to repeat the demo, click here: <input type="submit" name="submit" value="Repeat Demo" class="btn btn-default">
+	<br> 
+	<br>
+	To continue with the experiment, click here: <input type="submit" name="submit" value="Continue" class="btn btn-default">
+	</p>
+	</center>
+	<p>
+	Here are the instructions again: In this part of the experiment, you will be shown {{ nStim }} different snacks, one on each trial. Please determine on a scale from 0 (least) to 10 (most) how much you want to eat this food right now. Then use your mouse to record that amount by sliding and clicking on the rating scale below the shown food image. You have as much time as you need to make your ratings, but please try to make them as fast as you can. 
+	</p>
+	
+	</form> 
+	
+	<center>
+	<img id="instructions" src="{{ url_for('static', filename = 'dmstudies/auction_instructions.png') }}">
+	</center>
+</body>
+</html>

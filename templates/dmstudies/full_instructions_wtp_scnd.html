@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<title>Instructions</title>
+<link href="/static/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<html>
+<br>
+
+<p>You will now do a computer task about curiosity. This task is similar to the first task you did, where you chose whether you were willing to wait to find out the answer to trivia questions. </p>
+
+<p> In this task, you're now going to choose if you're willing to <b>pay</b> to know the answer. Again, you'll be shown a series of trivia questions. If you want to find out the answer to the question, you'll have to pay a certain amount of money. </p>
+
+<p>For the purposes of this task, you have been given an extra $2 to spend. The $2 is enough to receive the answer to every single question, so you do not need to ration your money to see all of the answers. If you do not spend all of this money, it will be added to your total MTurk payment when you complete the study.  </p>
+
+<p> Like before, you can choose to skip the question if you do not want to pay to see the answer. If you are 100% certain that you already know the answer to the question, you may indicate that you already know it. If you choose to skip or indicate that you know the answer, you will NOT see the answer to the question.<p>
+
+<p>When you are first shown the trivia question, the screen will look like this:<p>
+
+<center><img width="50%" src="{{ url_for('static', filename = 'dmstudies/kanga_wtp_instructions.png') }}"></center>
+
+<p>You will use the keyboard to indicate if you would like to pay, skip, or know. Press the “Q” key to skip, the “T” key to pay, and the “P” key if you already know the answer to the question. </p>
+
+<p>If you choose to pay for a question, you will be asked to rate if the answer was worth paying for. Please use the keys for 1, 2, 3, 4, and 5 to indicate how worth it the answer was to you (1 = not worth it, 5 = extremely worth it). </p>
+
+<p>The task will continue for 10 minutes. The task takes the same amount of time regardless of how many questions you choose to skip or pay for, so please base your decisions on how interested you are in learning the answers and how willing you are to pay for them. </p>
+
+<p>You will now do a short practice version to get comfortable with the task. Please use this time to get used to pressing the different keys and the amount of time you have to respond to the different prompts.</p>
+
+<center>
+<form method="POST">
+	<input type="submit" value="Continue" class="btn btn-default">
+</form>
+</center>
+<br><br>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rating Task</title>
+	<link href="/static/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<center>
+	<form id="exp" method="POST">
+
+		<center><p id="html_text"> This text is from the HTML </p></center>
+
+		<div>
+		<canvas id="myCanvas" style="padding: 0; margin: auto; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0;">
+		</canvas>
+		</div>
+
+		<div>
+		<svg id="mySVG" style="padding: 0; margin: auto; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%"></svg>
+		</div>
+
+		<input type="hidden" id="experimentResults" name="experimentResults" value="[]">
+
+		<script src="{{ url_for('static', filename='components.js') }}"></script>
+
+		<script src="{{ url_for('static', filename='dmstudies/run_ratingtask.js') }}"></script>
+
+		<script>
+			var expVariables={{expVariables|tojson|safe}};
+			// curly brackets are for jinja2 templates, which returns expVariables from app.py
+			startExperiment();
+		</script>
+	</form>
+	</center>
+</body>
+</html>

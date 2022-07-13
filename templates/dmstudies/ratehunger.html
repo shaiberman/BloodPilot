@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="/static/style.css" rel="stylesheet">
+		<title>Hunger Rating</title>
+	</head>
+
+	<body>
+	<form id='form' method="POST">
+	<input type="hidden" id="hungerRatingResults" name="hungerRatingResults" value="">
+	</form>
+
+	<svg id="mySVG" style="display: none;"></svg>
+	<canvas id="myCanvas" style="display: none;"></canvas>
+
+	<script src="{{ url_for('static', filename='components.js') }}"></script>
+	<script src="{{ url_for('static', filename='dmstudies/run_scp_ratingtask.js') }}"></script>
+
+	<script>
+		var ratingOrder = {{ratingOrder|tojson|safe}};
+
+		var expVariables=[];
+		var stimFolder = '';
+
+		var svg = document.getElementById("mySVG");
+		var allTrials = [];
+		var currTrialN = 0;
+
+		var rs_min = 0;
+		var rs_max = 10;
+
+		var leftRatingText = 'Not at all';
+		var middleRatingText = 'Somewhat';
+		var rightRatingText = 'Extremely';
+
+
+		if (ratingOrder!="1") {
+			leftRatingText = 'Extremely';
+			rightRatingText = 'Not at all';
+		}
+
+		var currTrial = new trial({'question':'How hungry are you right now?','minPossibleRating':rs_min, 'maxPossibleRating':rs_max, 'minRatingText':leftRatingText, 'midRatingText':middleRatingText, 'maxRatingText':rightRatingText});
+		allTrials.push(currTrial);
+		var instructions;
+		var scale;
+		var tb1, tb2, tb3, tb4, tb5, tb6;
+		var t1;
+
+		getHungerRating();
+
+
+		var resizeWindow = function() {
+			var winWidth = window.innerWidth;
+			var winHeight = window.innerHeight;
+			canvas.width = winWidth;
+			canvas.height = winHeight;
+			ctx = document.getElementById('myCanvas').getContext('2d');
+			svg.setAttribute("width", winWidth.toString());
+			svg.setAttribute("height", winHeight.toString());
+			if (svg.contains(blankScreenCover)) {
+				svg.removeChild(blankScreenCover);
+			}
+			if (svg.contains(alertText)) {
+				svg.removeChild(alertText);
+			}
+			getHungerRating();
+
+		}
+
+		function getHungerRating() {
+			svg.style="padding: 0; margin: auto; display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%";
+			var winWidth = window.innerWidth;
+			var winHeight = window.innerHeight;
+
+			if (winWidth < 430) {
+				alertSmallWindow();
+			} else {
+
+				canvas.width = winWidth;
+				canvas.height = winHeight;
+				var ctx = canvas.getContext('2d');
+
+				instructionsText='How hungry are you right now?'
+				if (instructions == null) {
+					instructions = new textBox(instructions, instructionsText, 20, BLACK);
+				} else {
+					instructions.removeText();
+				}
+				instructions.showText(0, canvas.height/2 - 60);
+
+				if (scale == null) {
+					scale = new ratingScale(rs_min,rs_max,1,0.01,canvas.width/2,canvas.height/2, ["", "", "", "", "", "", "", "", "", "", ""]);
+				} else {
+					scale.removeScale();
+				}
+				scale.drawRatingScale(canvas.width/2,canvas.height/2, drawIndicatorLine = true); // draws/redraws scale
+
+				// 0 is the middle of the screen / the middle of the scale
+
+				var tb1Text=leftRatingText;
+				if (tb1 == null) {
+					tb1 = new textBox(tb1, tb1Text, 20, BLACK);
+				} else {
+					tb1.removeText();
+				}
+				tb1.showText(0 - scale.ratingBarWidth/2, canvas.height/2 + 65);
+
+				/*
+				var tb2Text='A little'
+				tb2 = new textBox(tb2, tb2Text, 20, BLACK);
+				tb2.showText(0 - scale.ratingBarWidth/4, canvas.height/2 + 65);
+				*/
+
+				var tb3Text=middleRatingText;
+				if (tb3 == null) {
+					tb3 = new textBox(tb3, tb3Text, 20, BLACK);
+				} else {
+					tb3.removeText();
+				}
+				tb3.showText(0, canvas.height/2 + 65);
+
+				/*
+				var tb4Text='Very'
+				tb4 = new textBox(tb4, tb4Text, 20, BLACK);
+				tb4.showText(0 + scale.ratingBarWidth/4, canvas.height/2 + 65);
+				*/
+
+				var tb5Text=rightRatingText;
+				if (tb5 == null) {
+					tb5 = new textBox(tb5, tb5Text, 20, BLACK);
+				} else {
+					tb5.removeText();
+				}
+				tb5.showText(0 + scale.ratingBarWidth/2, canvas.height/2 + 65);
+				
+				t1 = performance.now();
+			}
+		}
+
+		// overwrite the function getRating(evt) in components.js
+		var waitingForHungerRsp = true;
+		var getRating = function(evt) {
+			if (!svg.contains(blankScreenCover)) { 
+				if (waitingForHungerRsp) {
+					var nRatingValues = (scale.max - scale.min)/scale.increment;
+					var nScaleValues = scale.ratingBarWidth/scale.increment;
+					var clickX = evt.clientX;
+
+					// mouse listener is on the selector, not the bar itself
+					// so mouse can actually be clicked on a location before the bar
+					// this readjusts the location of the click so it can only be at the max or min
+					if (clickX < scale.ratingBarX) {
+						clickX = scale.ratingBarX
+					} else if (clickX > scale.ratingBarX + scale.ratingBarWidth) {
+						clickX = scale.ratingBarX + scale.ratingBarWidth;
+					}
+
+					var rating = clickX - scale.ratingBarX + scale.min;
+					rating = rating / nScaleValues * nRatingValues;
+					rating = rating/scale.increment;
+					rating = Math.floor(rating);
+					rating = rating*scale.increment;
+					t2 = evt.timeStamp;
+					allTrials[currTrialN].rating = rating; 
+					allTrials[currTrialN].rt = t2 - t1; 
+					instructions.removeText();
+					scale.removeScale();
+
+					tb1.removeText();
+					//tb2.removeText();
+					tb3.removeText();
+					//tb4.removeText();
+					tb5.removeText();
+
+					var strExpResults = JSON.stringify(allTrials);
+					document.getElementById('hungerRatingResults').value = strExpResults;
+					document.getElementById('form').submit()
+				} 
+				else {
+					if (!svg.contains(blankScreenCover)) { 
+						t2_UNIX = Date.now();
+						scale.recordRating(evt);
+					}
+				}
+			}
+		}
+		</script>
+	</body>
+</html>

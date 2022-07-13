@@ -1,0 +1,194 @@
+	<!DOCTYPE html>
+	<html>
+		<head>
+		<title>Physical activity habits </title>
+		<link href="/static/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<style>
+				.row {
+					width: 50%;
+					margin: auto;
+				}
+				.question {
+					width: 50%;
+					margin: auto;
+
+				}
+				.answer {
+					width: 40%;
+					margin: auto;
+				}
+			</style>
+		</head>
+
+		<br><br>
+		<form method="POST" style="padding: 0px;">
+
+		<center>
+			<!-- vigorous activity -->
+			<p style >Think about all the <b>vigorous</b> activities that you did in the <b>last 7 days.<br>
+				Vigorous</b> physical activities refer to activities that take hard physical effort and make you breathe
+				much harder than normal.<br>
+				Think <i>only</i> about those physical activities that you did for at least 10 minutes at a time.	</p>
+
+			<p  style="text-align: left; width: 50%">
+				1. During the <b>last 7 days</b>, on how many days did you do <b>vigorous</b> physical activities like heavy lifting, digging, aerobics, or fast bicycling?
+			</p>
+			<p  style="text-align: left; width: 20%">
+			<label for="VigorousDays"> </label>
+			<select name="VigorousDays" required>
+				<option selected disabled hidden value=''></option>
+				{% for i in range(0,8) %}
+					<option value="{{ i|string }}">{{ i|string }}</option>
+				{% endfor %}
+			</select>
+					days per week
+			<br>
+			</p>
+			<p  style="text-align: left; width: 50%">
+			2. How much time did you usually spend doing <b>vigorous</b> physical activities on one of those days?
+			</p>
+			<p  style="text-align: left; width: 20%">
+			<label for="VigorousHours"> </label>
+			<select name="VigorousHours" required>
+				<option selected disabled hidden value=''></option>
+				{% for i in range(0,12) %}
+					<option value="{{ i|string }}">{{ i|string }}</option>
+				{% endfor %}
+			</select>
+				hours per day
+
+			<br>
+			<label for="VigorousMinutes"> </label>
+			<select name="VigorousMinutes" required>
+				<option selected disabled hidden value=''></option>
+				{% for i in range(0,60,5) %}
+					<option value="{{ i|string }}">{{ i|string }}</option>
+				{% endfor %}
+			</select>
+				minutes per day
+			</p>
+		<br><br>
+
+			<!-- moderate activity -->
+			<p>Now think about all the <b>moderate</b> activities that you did in the <b>last 7 days.<br>
+				Moderate</b> physical activities refer to activities that take moderate physical effort and make you breathe
+				somewhat harder than normal..<br>
+				Think <i>only</i> about those physical activities that you did for at least 10 minutes at a time.	</p>
+			<p style="text-align: left; width: 50%">
+				3. During the <b>last 7 days</b>, on how many days did you do <b>moderate</b> physical activities like carrying light loads, bicycling at a regular pace, or doubles tennis?
+					Do not include walking
+			</p>
+			<p  style="text-align: left; width: 20%">
+			<label for="ModerateDays"> </label>
+			<select name="ModerateDays" required>
+				<option selected disabled hidden value=''></option>
+				{% for i in range(0,8) %}
+					<option value="{{ i|string }}">{{ i|string }}</option>
+				{% endfor %}
+			</select>
+					days per week
+		</p>
+			<p style="text-align: left; width: 50%">
+			 4. How much time did you usually spend doing <b>moderate</b> physical activities on one of those days?
+			</p>
+			<p style="text-align: left; width: 20%">
+			<label for="ModerateHours"> </label>
+			<select name="ModerateHours" required>
+				<option selected disabled hidden value=''></option>
+				{% for i in range(0,13) %}
+					<option value="{{ i|string }}">{{ i|string }}</option>
+				{% endfor %}
+			</select>
+				hours per day
+
+			<br>
+			<label for="ModerateMinutes"> </label>
+			<select name="ModerateMinutes" required>
+				<option selected disabled hidden value=''></option>
+				{% for i in range(0,60,5) %}
+					<option value="{{ i|string }}">{{ i|string }}</option>
+				{% endfor %}
+			</select>
+				minutes per day
+		</p>
+		<br><br>
+			<!-- walking -->
+			<p>Now think about the time you spent <b>walking</b> activities that you did in the <b>last 7 days.</b><br>
+			   This includes at work and at home, walking to travel from place to place, and any other walking that you have done solely for recreation, sport, exercise, or leisure.</p>
+			<p style="text-align: left; width: 50%">
+				5. During the <b>last 7 days</b>, on how many days did you <b>walk</b> for at least 10 minutes at a time?
+			</p>
+			<p style="text-align: left; width: 20%">
+		<label for="WalkingDays"> </label>
+		<select name="WalkingDays" required>
+			<option selected disabled hidden value=''></option>
+			{% for i in range(0,8) %}
+				<option value="{{ i|string }}">{{ i|string }}</option>
+			{% endfor %}
+		</select>
+				days per week
+		<br>
+			<p style="text-align: left; width: 50%">
+				6. How much time did you usually spend <b>walking</b> on one of those days?
+			</p>
+			<p style="text-align: left; width: 20%">
+			<label for="WalkingHours"> </label>
+		<select name="WalkingHours" required>
+			<option selected disabled hidden value=''></option>
+			{% for i in range(0,13) %}
+				<option value="{{ i|string }}">{{ i|string }}</option>
+			{% endfor %}
+		</select>
+			hours per day
+
+		<br>
+		<label for="WalkingMinutes"> </label>
+		<select name="WalkingMinutes" required>
+			<option selected disabled hidden value=''></option>
+			{% for i in range(0,60,5) %}
+				<option value="{{ i|string }}">{{ i|string }}</option>
+			{% endfor %}
+		</select>
+			minutes per day
+		</p>
+		<br><br>
+			<!-- sitting-->
+			<p>The last question is about the time you spent <b>sitting</b> on weekdays during the <b>last 7 days</b>.<br>
+				Include time spent at work, at home, while doing course work and during leisure time.<br>
+				This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television.</p>
+			<p style="text-align: left; width: 50%">
+				7. During the <b>last 7 days</b>, on how many days did you spend <b>sitting</b> on a <b>week day</b>?
+			</p>
+			<p style="text-align: left; width: 20%">
+			<label for="SittingHours"> </label>
+			<select name="SittingHours" required>
+				<option selected disabled hidden value=''></option>
+				{% for i in range(0,16) %}
+					<option value="{{ i|string }}">{{ i|string }}</option>
+				{% endfor %}
+			</select>
+				hours per day
+
+			<br>
+			<label for="SittingMinutes"> </label>
+			<select name="SittingMinutes" required>
+				<option selected disabled hidden value=''></option>
+				{% for i in range(0,60,5) %}
+					<option value="{{ i|string }}">{{ i|string }}</option>
+				{% endfor %}
+			</select>
+				minutes per day
+			</p>
+		<br>
+
+		</center>
+
+		<br>
+		<center><input type="submit" value="Submit" class="btn btn-default"></center>
+		<br>
+
+
+		</form>
+
+	</html>

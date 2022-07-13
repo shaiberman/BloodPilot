@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Choice Task Instructions</title>
+	<link href="/static/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<br>
+	<form method="POST">
+	<center>
+	<p>
+	The next part of the experiment will be the full version of the task. You can review the instructions below.
+	</p>
+	<p>
+	If you would like to repeat the demo first, click here: <input type="submit" name="submit" value="Repeat Demo" class="btn btn-default">
+	<br>
+	<br>
+	To continue with the experiment, click here: <input type="submit" name="submit" value="Continue" class="btn btn-default">
+	</p>
+	</center>
+	<p>
+	Here are the instructions again: two snacks will be shown on the screen in each trial. One snack will be on the left and the second snack will be on the right. Please determine which snack you prefer. If you prefer the snack on the left, press key 'u'. If you prefer the snack on the right, press key 'i'. You will have 4 seconds to make your choice on each trial, so please try and make your choice quickly. A small black box at the center of the screen will change color momentarily to indicate whether your response is recorded. If your response is recorded, the box will turn green. If you do not respond, the box will turn red before moving onto the next trial. If you miss a trial, don't worry, just focus on the next trial. If it seems that your responses are not being recorded, click an image and try responding again.
+	</p>
+	
+	</form> 
+	<center>
+	<img id="instructions" src="{{ url_for('static', filename = 'dmstudies/choicetask_instructions.png') }}">
+	</center>
+</body>
+</html>

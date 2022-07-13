@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="/static/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<style>
+			.row {
+				width: 60%;
+				margin: auto;
+			}
+			.question {
+				width: 60%;
+				margin: auto;
+
+			}
+			.answer {
+				width: 20%;
+				margin: auto;
+			}
+			.range_answer {
+				width: 40%;
+				margin: auto;
+			}
+
+		</style>
+		<title>Questionnaire</title>
+	</head>
+
+	<br>
+	<center><p><i>{{instructions|safe}}</i></p></center>
+	<br>
+
+	<form method="POST" style="padding: 0px 30px;">
+		{% for i in range(0,info|length) %}
+			{% set q_a_pair = info[i] %}
+			{% for q, a in q_a_pair.items() %}
+				<div class="row">
+				<input type="hidden" name={{"q"+(i+1)|string}} value="{{ q }}">
+				<div class="question">{{i+1}}. {{ q }}</div>
+				{% if i==0 %}
+					<div class="range_answer"><p> <center>0% - 100%</center> <input type="range" id="myRange0" min="0" max="100" value="50" name={{"a"+(i+1)|string}} class="slider"> <p><center>Your response: <span id="value0"></span>%</center></p></div>
+				{% elif i==1 %}
+					<div class="range_answer"><p> <center>0 (not at all) - 100 (extremely confident)</center> <input type="range" id="myRange1" min="0" max="100" value="50" name={{"a"+(i+1)|string}} class="slider"> <p><center>Your response: <span id="value1"></span></center></p></div>
+				{% endif %}
+				</div>
+				<br><br>
+			{% endfor %}
+		{% endfor %}
+
+		<br>
+		<center><input type="submit" value="Submit" class="btn btn-default"></center>
+		<br>
+	</form>
+
+<script>
+	var slider0 = document.getElementById("myRange0");
+	var slider1 = document.getElementById("myRange1");
+	var output0 = document.getElementById("value0");
+	output0.innerHTML = slider0.value;
+	var output1 = document.getElementById("value1");
+	output1.innerHTML = slider1.value;
+
+	slider0.oninput = function() {
+	  output0.innerHTML = this.value;
+	}
+
+	slider1.oninput = function() {
+	  output1.innerHTML = this.value;
+	}
+</script>
+
+</html>

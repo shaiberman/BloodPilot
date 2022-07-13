@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Route to site</title>
+	<link href="/static/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<form method="POST">
+	<p>
+	{{ HIT_description|safe }}
+	<br><br>
+	If any technical issues arise during the study, please email <a href="mailto:culearninglab@gmail.com">culearninglab@gmail.com</a> for assistance.
+	<br><br>
+	Please keep in mind that leaving the study's webpage will affect the timing of the study and may cause the HIT to take longer than advertised to complete. 
+	<br><br>
+	Please keep this page open while you work on the study. When you finish the study, you will receive a unique code. You will have to return to this page at the end of the study to submit the code in the box below.
+	<br><br>
+	Here is the link to the study: <a href="{{link}}" target="_blank">{{ link }}</a>
+	<br><br>
+	
+	<center>
+		Enter completion code here: <input type="text" id="completion_code" name="completion_code" value="">
+		<input type="submit" name="submit" value="Submit" class="btn btn-default">
+	</center>
+	<br>
+	<center><i>{{ error_message }}</i></center>
+	</p>
+	</form>
+</body>
+</html>

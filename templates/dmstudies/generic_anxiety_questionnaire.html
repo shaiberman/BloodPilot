@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="/static/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<style>
+			.row {
+				width: 60%;
+				margin: auto;
+			}
+			.question {
+				width: 60%;
+				margin: auto;
+
+			}
+			.answer {
+				width: 20%;
+				margin: auto;
+			}
+			.range_answer {
+				width: 40%;
+				margin: auto;
+			}
+		</style>
+		<title>Questionnaire</title>
+	</head>
+
+	<br>
+	<center><p><i>{{instructions|safe}}</i></p></center>
+	<br>
+
+	<form method="POST" style="padding: 0px 30px;">
+		{% for i in range(0,info|length) %}
+			{% set q_a_pair = info[i] %}
+			{% for q, a in q_a_pair.items() %}
+				<div class="row">
+					<input type="hidden" name={{"q"+(i+1)|string}} value="{{ q }}">
+					<div class="question">{{i+1}}. {{ q }}</div>
+					{% if (category == "Storms" and (i==5 or i==6)) or (category == "Fires" and (i==7 or i==8)) %}
+							<br>
+							<div class="range_answer"><center>0 (none) - 100 (a great deal)</center>
+								<input type="range" id={{"myRange"+(i+1)|string}} min="0" max="100" value="50" name={{"a"+(i+1)|string}} class="slider">
+								<p><center>Your response: <span id={{"value"+(i+1)|string}}></span></center></p>
+							</div>
+
+					{% else %}
+						{% for option in a %}
+							<div class="answer"><input type="radio" name={{"a"+(i+1)|string}} value="{{option}}"> {{option}} </div>
+						{% endfor %}
+					{% endif %}
+				</div>
+				<br><br>
+			{% endfor %}
+		{% endfor %}
+
+		<br>
+		<center><input type="submit" value="Submit" class="btn btn-default"></center>
+		<br>
+	</form>
+
+	<script>
+		var category = {{ category|tojson|safe }};
+		if (category == "Fires") {
+			var sliderA = document.getElementById("myRange8");
+			var sliderB = document.getElementById("myRange9");
+			var outputA = document.getElementById("value8");
+			outputA.innerHTML = sliderA.value;
+			var outputB = document.getElementById("value9");
+			outputB.innerHTML = sliderB.value;
+
+			sliderA.oninput = function() {
+			  outputA.innerHTML = this.value;
+			}
+
+			sliderB.oninput = function() {
+			  outputB.innerHTML = this.value;
+			}
+		} else if (category == "Storms") {
+			var sliderA = document.getElementById("myRange6");
+			var sliderB = document.getElementById("myRange7");
+			var outputA = document.getElementById("value6");
+			outputA.innerHTML = sliderA.value;
+			var outputB = document.getElementById("value7");
+			outputB.innerHTML = sliderB.value;
+
+			sliderA.oninput = function() {
+			  outputA.innerHTML = this.value;
+			}
+
+			sliderB.oninput = function() {
+			  outputB.innerHTML = this.value;
+			}
+		}
+	</script>
+</html>

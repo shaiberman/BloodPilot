@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title></title>
+	<link href="/static/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style>
+			.row {
+				width: 50%;
+				margin: auto;
+			}
+			.question {
+				width: 50%;
+				margin: auto;
+
+			}
+			.answer {
+				width: 40%;
+				margin: auto;
+			}
+		</style>
+	</head>
+
+	<br><br>
+	<form method="POST" style="padding: 0px;">
+
+	<center>
+	<p>How long has it been since your last meal (in hours)?
+
+	<label for="HoursSinceMeal"> </label>
+	<select name="HoursSinceMeal" required>
+		<option selected disabled hidden value=''></option>
+		{% for i in range(1,24) %}
+			<option value="{{ i|string }}">{{ i|string }}</option>
+		{% endfor %}
+	</select>
+	</p>
+	</center>
+	<br>
+
+	<center>
+	<p>When do you expect to eat your next meal (in how many hours)?
+
+	<label for="HoursToMeal"> </label>
+	<select name="HoursToMeal" required>
+		<option selected disabled hidden value=''></option>
+		{% for i in range(1,24) %}
+			<option value="{{ i|string }}">{{ i|string }}</option>
+		{% endfor %}
+	</select>
+	</p>
+	<br>
+	</center>
+
+	<center>
+		<p>What time is it?
+
+ 	<select name="time" required>
+		<option selected disabled hidden value=''></option>
+		{% for i in range(1,13) %}
+			<option value="{{ i|string }}">{{ i|string }}</option>
+		{% endfor %}
+	</select>:
+	<select name="minute" required>
+		<option selected disabled hidden value=''></option>
+		<option value="00">00</option>
+		<option value="15">15</option>
+		<option value="30">30</option>
+		<option value="45">45</option>
+	</select>
+	<select name="time_of_day" required>
+		<option selected disabled hidden value=''></option>
+		<option value="AM">AM</option>
+		<option value="PM">PM</option>
+	</select>
+	</p>
+	<br>
+	</center>
+
+
+	{% for i in range(0,info|length) %}
+		{% set q_a_pair = info[i] %}
+		{% for q, a in q_a_pair.items() %}
+			<input type="hidden" name={{"q"+(i+1)|string}} value="{{ q }}">
+			<div class="row">
+			<div class="question">{{i+1}}. {{ q }}</div>
+			{% if a|length > 0 %}
+				{% for option in a %}
+				<div class="answer"><input type="radio" name={{"a"+(i+1)|string}} value="{{option}}"> {{ option }}</div>
+				{% endfor %}
+			{% endif %}
+			</div>
+			<br>
+		{% endfor %}
+	{% endfor %}
+
+	<br>
+	<center><input type="submit" value="Submit" class="btn btn-default"></center>
+	<br>
+
+
+
+
+	</form>
+
+</html>
