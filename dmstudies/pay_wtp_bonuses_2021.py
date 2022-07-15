@@ -37,7 +37,7 @@ def pay_wtp_bonus(test, sandbox):
     # NEW IN 2021
     # save bonus payment info in csv
     print(_thisDir)
-    df.to_csv(os.path.join(_thisDir,"kanga_ai","tmp_bonuses.csv"))
+    df.to_csv(os.path.join(_thisDir,"tmp_bonuses.csv"))
     """
     assignmentIds = df['assignmentId']
     df.set_index('assignmentId', inplace=True)

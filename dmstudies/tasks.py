@@ -416,6 +416,7 @@ def Qrating_task(order):
             return redirect(url_for('unauthorized_error'))
     else:
         return redirect(url_for('unauthorized_error'))
+
 ##################################################################################
 
 
@@ -692,8 +693,33 @@ def demographicq(order):
         add_subfile_worker_notes(expId, subjectId, 'completedDemoQ', True)
         results_to_csv(expId, subjectId, filePath, 'DemographicQuestionnaire.csv', q_and_a, {})
 
-        return redirect(
-            url_for('show_completion_code', n=1, expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+        return redirect(url_for('.wtp_bonus', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
                     turkSubmitTo=turkSubmitTo, live=live, order=order))
     else:
         return redirect(url_for('unauthorized_error'))
+
+
+@tasks.route("/wtp_bonus/<order>", methods=["GET", "POST"])
+def wtp_bonus(order):
+    containsAllMTurkArgs = contains_necessary_args(request.args)
+    if containsAllMTurkArgs:
+        [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
+    if request.method == "GET" and containsAllMTurkArgs:
+        subjectId = get_subjectId(expId, workerId)
+        whichTask = 'trivia'
+        pay_amount = get_wtp_pay_amount(expId, subjectId)  # in cents
+        # subtract from 2 dollars
+        if pay_amount <= 200:
+            bonusAmount = 200 - pay_amount
+            bonusAmount = bonusAmount / 100.0
+            bonusAmount = round(bonusAmount, 2)
+            return render_template('dmstudies/wtp_bonus.html', whichTask=whichTask, bonusAmount=bonusAmount)
+        else:
+            return redirect(url_for('show_completion_code', expId=expId, workerId=workerId, assignmentId=assignmentId,
+                        hitId=hitId, turkSubmitTo=turkSubmitTo, live=live))
+    elif containsAllMTurkArgs:  # in request.method == "POST"
+        return redirect(
+            url_for('show_completion_code', n=1, expId=expId, workerId=workerId, assignmentId=assignmentId,
+                    hitId=hitId, turkSubmitTo=turkSubmitTo, live=live, order=order))
+    return redirect(url_for('unauthorized_error'))
+
