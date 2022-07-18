@@ -163,5 +163,5 @@ def internal_server_error(e):
 if __name__ == "__main__":
     app.debug = True
     app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
-    # app.run(host ='127.0.0.1', port = 5000) ## app.run(host = '0.0.0.0', port = 8000)#
+    #app.run(host ='127.0.0.1', port = 5000) ## app.run(host = '0.0.0.0', port = 8000)#
     app.run(host = 'http://foodchoiceexp.pythonanywhere.com/')

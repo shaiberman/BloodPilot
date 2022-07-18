@@ -93,17 +93,41 @@ def cur_study_info():
             add_worker_notes(expId, workerId, 'completionCode', completion_code)
         return render_template('dmstudies/cur_study_details.html')
     elif containsAllMTurkArgs:
-        subjectId = get_subjectId(expId, workerId)
-        if int(subjectId[-4:]) % 2 == 0:
-            order = 'o1'
-        else:
-            order = 'o2'
-        nextTask = expTaskOrders[expId][order][0]
-        return redirect(url_for('instructions.%s' % nextTask, demo=True, order=order, expId=expId,
+
+        return redirect(url_for('.checkDiet', expId=expId,
                                 workerId=workerId, assignmentId=assignmentId, hitId=hitId,
                                 turkSubmitTo=turkSubmitTo, live=live))
     else:
         return redirect(url_for('unauthorized_error'))
+
+"""
+check u the subjects are vegan or vegetarian and if so, kick them out
+"""
+
+@tasks.route("/checkDiet", methods=["GET", "POST"])
+def checkDiet():
+    containsAllMTurkArgs = contains_necessary_args(request.args)
+    if containsAllMTurkArgs:
+        [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
+    if request.method == "GET" and containsAllMTurkArgs:
+        return render_template('dmstudies/checkDiet.html')
+    elif containsAllMTurkArgs:
+        is_veg = request.form["is_vegan"]
+        if int(is_veg) == 1:
+            return render_template('dmstudies/vegExit.html')
+        else:
+            subjectId = get_subjectId(expId, workerId)
+            if int(subjectId[-4:]) % 2 == 0:
+                order = 'o1'
+            else:
+                order = 'o2'
+            nextTask = expTaskOrders[expId][order][0]
+            return redirect(url_for('instructions.%s' % nextTask, demo=True, order=order, expId=expId,
+                                    workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                                    turkSubmitTo=turkSubmitTo, live=live))
+    else:
+        return redirect(url_for('unauthorized_error'))
+
 
 
 """

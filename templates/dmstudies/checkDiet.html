@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/static/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Check Diet</title>
+
+	<script type="text/javascript">
+		window.history.forward();
+		function noBack() {
+			window.history.forward();
+		}
+	</script>
+
+</head>
+<body><!--  style="margin:40% 30%;">-->
+
+
+
+<br>
+<center>
+	<form method="POST" style="padding: 0px;">
+	<p id="message" style="margin: 5% 5%">
+	   This study involves food choices. Are you vegan or vegetarian?
+
+		<select name="is_vegan" required>
+			<option selected disabled hidden value=''></option>
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</select>
+	</p>
+	<br>
+		<center><input type="submit" value="Submit" class="btn btn-default"></center>
+	<br>
+			</form>
+
+	</center>
+	</body>
+
+</html>
