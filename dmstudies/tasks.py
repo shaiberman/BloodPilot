@@ -600,24 +600,24 @@ def last_meal(order):
             filePath = dataDir + expId + '/' + subjectId + '/'
             results_to_csv(expId, subjectId, filePath, 'LastMeal.csv', results, {})
             results_to_csv(expId, subjectId, filePath, 'LastMeal2.csv', q_and_a, {})
-            return redirect(url_for('.EATq', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+
+            return redirect(url_for('.MEQ', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
                     turkSubmitTo=turkSubmitTo, live=live, order=order))
     return redirect(url_for('page_not_found'))
 
-
-@tasks.route("/EATq/<order>", methods=["GET", "POST"])
-def EATq(order):
-    name = "EATq"
+@tasks.route("/MEQ/<order>", methods=["GET", "POST"])
+def MEQ(order):
+    name = "MEQ"
     containsAllMTurkArgs = contains_necessary_args(request.args)
     if containsAllMTurkArgs:
         [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
         subjectId = get_subjectId(expId, workerId)
-        info = get_EATq()
+        info = get_MEQ()
         if request.method == "GET":
             options = info[0][list(info[0].keys())[0]]
             widthPercent = 70.0 / len(options)
-            return render_template('dmstudies/EATq.html', info=info,
-                                   instructions="You will now be asked some questions about your eating habits.",
+            return render_template('dmstudies/MEQ.html', info=info,
+                                   instructions="You will now be asked some questions about your eating habits. For each item, please check the answer that best characterizes your attitudes or behaviors",
                                    category=name,
                                    widthPercent=widthPercent)
         else:  # in request.method == "POST"
@@ -634,9 +634,81 @@ def EATq(order):
                 q_and_a.append(tmp)
 
             filePath = dataDir + expId + '/' + subjectId + '/'
+            add_subfile_worker_notes(expId, subjectId, 'completedMEQuestionnaire', True)
+            results_to_csv(expId, subjectId, filePath, 'MEQuestionnaireResults.csv', q_and_a, {})
 
+            return redirect(url_for('.IEQ', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                                    turkSubmitTo=turkSubmitTo, live=live, order=order))
+    return redirect(url_for('page_not_found'))
+
+
+@tasks.route("/IEQ/<order>", methods=["GET", "POST"])
+def IEQ(order):
+    name = "IEQ"
+    containsAllMTurkArgs = contains_necessary_args(request.args)
+    if containsAllMTurkArgs:
+        [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
+        subjectId = get_subjectId(expId, workerId)
+        info = get_IEQ()
+        if request.method == "GET":
+            options = info[0][list(info[0].keys())[0]]
+            widthPercent = 70.0 / len(options)
+            return render_template('dmstudies/IEQ.html', info=info,
+                                   instructions="For each item, please check the answer that best characterizes your attitudes or behaviors.",
+                                   category=name,
+                                   widthPercent=widthPercent)
+        else:  # in request.method == "POST"
+            q_and_a = []  # list of dictionaries where questions are keys and answers are values
+            nQuestions = len(info)
+            for i in range(0, nQuestions):
+                tmp = {}
+                tmp['QuestionNum'] = i + 1
+                tmp['Question'] = request.form['q' + str(i + 1)]
+                if 'a' + str(i + 1) in request.form:
+                    tmp['Answer'] = request.form['a' + str(i + 1)]  # set keys and values in dictionary
+                else:
+                    tmp['Answer'] = ''
+                q_and_a.append(tmp)
+
+            filePath = dataDir + expId + '/' + subjectId + '/'
+            add_subfile_worker_notes(expId, subjectId, 'completedIEQuestionnaire', True)
+            results_to_csv(expId, subjectId, filePath, 'IEQuestionnaireResults.csv', q_and_a, {})
+
+            return redirect(url_for('.EATq', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                                    turkSubmitTo=turkSubmitTo, live=live, order=order))
+    return redirect(url_for('page_not_found'))
+
+
+@tasks.route("/EATq/<order>", methods=["GET", "POST"])
+def EATq(order):
+    name = "EATq"
+    containsAllMTurkArgs = contains_necessary_args(request.args)
+    if containsAllMTurkArgs:
+        [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
+        subjectId = get_subjectId(expId, workerId)
+        info = get_EATq()
+        if request.method == "GET":
+            options = info[0][list(info[0].keys())[0]]
+            widthPercent = 70.0 / len(options)
+            return render_template('dmstudies/EATq.html', info=info,
+                                   instructions="For each item, please check the answer that best characterizes your attitudes or behaviors..",
+                                   category=name,
+                                   widthPercent=widthPercent)
+        else:  # in request.method == "POST"
+            q_and_a = []  # list of dictionaries where questions are keys and answers are values
+            nQuestions = len(info)
+            for i in range(0, nQuestions):
+                tmp = {}
+                tmp['QuestionNum'] = i + 1
+                tmp['Question'] = request.form['q' + str(i + 1)]
+                if 'a' + str(i + 1) in request.form:
+                    tmp['Answer'] = request.form['a' + str(i + 1)]  # set keys and values in dictionary
+                else:
+                    tmp['Answer'] = ''
+                q_and_a.append(tmp)
+
+            filePath = dataDir + expId + '/' + subjectId + '/'
             add_subfile_worker_notes(expId, subjectId, 'completedEATQuestionnaire', True)
-
             results_to_csv(expId, subjectId, filePath, 'EAT26QuestionnaireResults.csv', q_and_a, {})
 
             return redirect(
