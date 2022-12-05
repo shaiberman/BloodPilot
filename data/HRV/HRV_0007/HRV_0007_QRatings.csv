@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,439,Some bands share a name with a food. Which band named after a foodstuff has sold the most records?,"the Red Hot Chili Peppers, followed closely by Meatloaf",50,74,HRV,HRV_0007,2022-11-30 17:36:48
+1.0,165,What did the letter Q originally stand for in NASDAQ?  ,Quotations ,74,79,HRV,HRV_0007,2022-11-30 17:36:48
+2.0,340,Which country invented volleyball?   ,USA,63,33,HRV,HRV_0007,2022-11-30 17:36:48
+3.0,441,Sailors used to suffer from a horrible illness called scurvy. Which food prevents scurvy?,citrus fruit (scurvy is caused by a lack of vitamin c),Know,NaN,HRV,HRV_0007,2022-11-30 17:36:48
+4.0,452,How do farmers test whether cranberries are ripe?,Ripe cranerries bounce when dropped on the ground,68,57,HRV,HRV_0007,2022-11-30 17:36:48
+5.0,242,"What Pacific inlet was called ""Stingray Bay"" until Captain Cook renamed it for ""the great quantity of plants"" his scientists had discovered?",Botany Bay,49,36,HRV,HRV_0007,2022-11-30 17:36:48
+6.0,305,"What's the name of the dog who is the hero of Jack London's ""The Call of the Wild""?   ",Buck,65,63,HRV,HRV_0007,2022-11-30 17:36:48
+7.0,29,Carnivorous animals will not eat another animal that has been killed by what means?,Lightning strike,74,81,HRV,HRV_0007,2022-11-30 17:36:48
+8.0,394,"With over 5.3 million sold since 1959, what's by far the most successful British car of all time?",The Mini Cooper,50,62,HRV,HRV_0007,2022-11-30 17:36:48
+9.0,134,"What animal, which eighteenth century settlers called a ""native bear"" has two opposable thumbs on each hand?",Koala,70,72,HRV,HRV_0007,2022-11-30 17:36:48

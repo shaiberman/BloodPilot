@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,402,"What food, still edible, was found by archaeologists in the tombs of Egyptian pharaohs? ",Honey,24,50,HRV,HRV_0305,2022-11-30 21:21:15
+1.0,422,What are the top two most popular spices in the world?,Pepper and Mustard,49,50,HRV,HRV_0305,2022-11-30 21:21:15
+2.0,137,What are the bumps on the tongue that carry the taste buds called? ,Papillae,Know,NaN,HRV,HRV_0305,2022-11-30 21:21:15
+3.0,324,Which animal can have eyes that are a foot in diameter? ,Giant squid,Know,NaN,HRV,HRV_0305,2022-11-30 21:21:15
+4.0,116,"Though the rest of him lies in Westminster Abbey, what writer's heart is buried near his native Dorchester?",Thomas Hardy,Know,NaN,HRV,HRV_0305,2022-11-30 21:21:15
+5.0,413,Which popular treat was invented by an 11-year-old in California? ,The popsicle,1,24,HRV,HRV_0305,2022-11-30 21:21:15
+6.0,394,"With over 5.3 million sold since 1959, what's by far the most successful British car of all time?",The Mini Cooper,Know,NaN,HRV,HRV_0305,2022-11-30 21:21:15
+7.0,179,"What forms the only part of the Kansas border, a seventy-five mile stretch, that's not drawn with a straight edge?",The Missouri River ,23,50,HRV,HRV_0305,2022-11-30 21:21:15
+8.0,87,"The ""Mohorovicic discontinuity"" divides what two outer layers of the earth?",The crust and the mantle,0,48,HRV,HRV_0305,2022-11-30 21:21:15
+9.0,303,What's the more common name for the retinal scotoma caused by the optic nerve? ,Your blind spot,0,49,HRV,HRV_0305,2022-11-30 21:21:15

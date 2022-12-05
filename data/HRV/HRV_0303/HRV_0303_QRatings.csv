@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,459,What is the only non-animal natural source of vitamin D?,Mushrooms which have been exposed to light,41,98,HRV,HRV_0303,2022-11-30 21:26:38
+1.0,205,What is the most common mammal in the U.S.? ,Mouse,76,99,HRV,HRV_0303,2022-11-30 21:26:38
+2.0,150,What color is insect blood? ,Yellow,73,99,HRV,HRV_0303,2022-11-30 21:26:38
+3.0,256,"What school has the most students over age 25, according to U.S. News & World Report?",University of Phoenix,24,97,HRV,HRV_0303,2022-11-30 21:26:38
+4.0,399,The Italian government regulates the price of what beverage?,Espresso,98,98,HRV,HRV_0303,2022-11-30 21:26:38
+5.0,420,What classic Disney song was inspired by lyricist Robert Sherman's fiver-year old son receiving the Sabin polio vaccine at school?,A Spoonful of Sugar ,77,98,HRV,HRV_0303,2022-11-30 21:26:38
+6.0,72,John Walker invented what common household item having accidentally mixed potassium chlorate and antimony sulfide the previous year?,Matches,94,92,HRV,HRV_0303,2022-11-30 21:26:38
+7.0,111,"The world's largest church is Our Lady of Peace Basilica in Yamoussoukro, what nation's capital?",Ivory Coast's ,11,99,HRV,HRV_0303,2022-11-30 21:26:38
+8.0,68,In which country is it most common for divers to be attacked by sharks?,United States,Know,NaN,HRV,HRV_0303,2022-11-30 21:26:38
+9.0,169,"What element did alchemist Hennig Brand discover in 1669 when, boiling his own urine in the hopes of making gold, he observed glowing fumes?",Phosphorus,25,98,HRV,HRV_0303,2022-11-30 21:26:38

@@ -1,0 +1,32 @@
+QuestionNum,Question,Answer,exp,subjectId,date
+1,Am terrified about being overweight.,Often,HRV,HRV_0260,2022-11-30 20:02:43
+2,Avoid eating when I am hungry.,Often,HRV,HRV_0260,2022-11-30 20:02:43
+3,Find myself preoccupied with food.,Always,HRV,HRV_0260,2022-11-30 20:02:43
+4,Have gone on eating binges where I feel that I may not be able to stop.,Often,HRV,HRV_0260,2022-11-30 20:02:43
+5,Cut my food into small pieces.,Rarely,HRV,HRV_0260,2022-11-30 20:02:43
+6,Aware of the calorie content of foods that I eat.,Often,HRV,HRV_0260,2022-11-30 20:02:43
+7,"Particullarly avoid foods with a high carbohydrate content (i.e. bread, rice, potatoes, etc.).",Sometimes,HRV,HRV_0260,2022-11-30 20:02:43
+8,Feel that others would prefer if I ate more.,Often,HRV,HRV_0260,2022-11-30 20:02:43
+9,Vomit after I have eaten.,Never,HRV,HRV_0260,2022-11-30 20:02:43
+10,Feel extremely guilty after eating.,Often,HRV,HRV_0260,2022-11-30 20:02:43
+11,Am preoccupied with a desire to be thinner.,Usually,HRV,HRV_0260,2022-11-30 20:02:43
+12,Think about burning up calories when I exercise.,Often,HRV,HRV_0260,2022-11-30 20:02:43
+13,Other people think that I am too thin.,Never,HRV,HRV_0260,2022-11-30 20:02:43
+14,Please select the answer Usually for this question.,Usually,HRV,HRV_0260,2022-11-30 20:02:43
+15,Am preoccupied with the thought of having fat on my body.,Often,HRV,HRV_0260,2022-11-30 20:02:43
+16,Take longer than others to eat my meals.,Rarely,HRV,HRV_0260,2022-11-30 20:02:43
+17,Avoid foods with sugar in them.,Rarely,HRV,HRV_0260,2022-11-30 20:02:43
+18,Eat diet foods.,Rarely,HRV,HRV_0260,2022-11-30 20:02:43
+19,Feel that food controls my life.,Often,HRV,HRV_0260,2022-11-30 20:02:43
+20,Display self-control around food.,Rarely,HRV,HRV_0260,2022-11-30 20:02:43
+21,Feel that others pressure me to eat.,Often,HRV,HRV_0260,2022-11-30 20:02:43
+22,Give too much time and thought to food.,Never,HRV,HRV_0260,2022-11-30 20:02:43
+23,Feel uncomfortable after eating sweets.,Often,HRV,HRV_0260,2022-11-30 20:02:43
+24,Engage in dieting behavior.,Rarely,HRV,HRV_0260,2022-11-30 20:02:43
+25,Like my stomach to be empty,Never,HRV,HRV_0260,2022-11-30 20:02:43
+26,Have the impulse to vomit after meals.,Never,HRV,HRV_0260,2022-11-30 20:02:43
+27,Enjoy trying rich new foods.,Sometimes,HRV,HRV_0260,2022-11-30 20:02:43
+28,Gone on binges where you feel that you may not be able to stop.,Never,HRV,HRV_0260,2022-11-30 20:02:43
+29,Ever make yourself sick (vomited) to control your weight or shape?,Never,HRV,HRV_0260,2022-11-30 20:02:43
+30,"Ever used laxatives, diet pills, or diuretics (water pills)  to control your weight or shape?",Never,HRV,HRV_0260,2022-11-30 20:02:43
+31,Exercised more than 60 minutes a day to lose or to control your weight?,Never,HRV,HRV_0260,2022-11-30 20:02:43

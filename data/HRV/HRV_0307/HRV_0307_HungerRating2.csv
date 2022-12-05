@@ -1,0 +1,2 @@
+question,minPossibleRating,maxPossibleRating,minRatingText,midRatingText,maxRatingText,rating,rt,exp,subjectId,date
+How hungry are you right now?,0,10,Not at all,Somewhat,Extremely,1.6600000000000001,2790.199999999255,HRV,HRV_0307,2022-11-30 22:46:52

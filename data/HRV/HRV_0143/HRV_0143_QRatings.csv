@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,105,"The SS Faith, a ship built by Leslie Comyn, was made of what unique material?",Cement,2,96,HRV,HRV_0143,2022-11-30 18:00:49
+1.0,185,What city's harbor is overlooked by Victoria Peak? ,Hong Kong ,1,97,HRV,HRV_0143,2022-11-30 18:00:49
+2.0,63,"In what country would you find the port of Rosetta, of Rosetta Stone fame?  ",Egypt,3,98,HRV,HRV_0143,2022-11-30 18:00:49
+3.0,397,"In Britain, what kind of meat comes in rashers?",Bacon,2,97,HRV,HRV_0143,2022-11-30 18:00:49
+4.0,265,What term for a rocket's propulsive force is calculated by multiplying its exhaust velocity by the burn rate of its fuel?,Thrust,11,94,HRV,HRV_0143,2022-11-30 18:00:49
+5.0,9,A conference on safety held at Columbia University's Teacher College in 1939 led to what change? ,School buses were painted yellow,0,91,HRV,HRV_0143,2022-11-30 18:00:49
+6.0,310,What's the only stock from the original Dow Jones Industrial Average that's still used in computing the index?,General Electric ,9,99,HRV,HRV_0143,2022-11-30 18:00:49
+7.0,463,How many donuts are concumed in the US every year?,over 10 billion donuts. ,1,46,HRV,HRV_0143,2022-11-30 18:00:49
+8.0,174,"What event inspired Herbert Morrison's famous quote ""Oh, the humanity!""?",The Hindenburg explosion,Know,NaN,HRV,HRV_0143,2022-11-30 18:00:49
+9.0,407,What slightly hallucinogenic spice did Malcolm X use to get high while in prison? ,Nutmeg,0,1,HRV,HRV_0143,2022-11-30 18:00:49

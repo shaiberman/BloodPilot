@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,331,"Which bird species has survived more than 70 million years, despite the fact that it lays one egg a year and is nearly blind?",Kiwi,75,79,HRV,HRV_0102,2022-11-30 18:15:37
+1.0,128,What African capital city is named after a U.S. president? ,Monrovia,Know,NaN,HRV,HRV_0102,2022-11-30 18:15:37
+2.0,408,What snack food is an ingredient in the explosive dynamite?  ,Peanuts ,100,73,HRV,HRV_0102,2022-11-30 18:15:37
+3.0,267,What transmits the disease typanosomiasis to humans and cattle? ,Tse-tse fly,Know,NaN,HRV,HRV_0102,2022-11-30 18:15:37
+4.0,424,What is used to make hummus?,chickpeas,Know,NaN,HRV,HRV_0102,2022-11-30 18:15:37
+5.0,9,A conference on safety held at Columbia University's Teacher College in 1939 led to what change? ,School buses were painted yellow,Know,NaN,HRV,HRV_0102,2022-11-30 18:15:37
+6.0,460,How did the pound cake get its name?,There was a pound of every ingredient in the original reciipe. ,76,28,HRV,HRV_0102,2022-11-30 18:15:37
+7.0,291,"What was the one question Sigmund Freud said he was unable to answer, despite 30 years of research?",What do women want? ,Know,NaN,HRV,HRV_0102,2022-11-30 18:15:37
+8.0,315,"Where did the abbreviation ""INRI"" traditionally appear? ",On Christ's crucifix ,Know,NaN,HRV,HRV_0102,2022-11-30 18:15:37
+9.0,395,"Young wines are said to have ""aroma."" What do older wines have instead?",Bouquet,Know,NaN,HRV,HRV_0102,2022-11-30 18:15:37

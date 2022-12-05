@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,346,Which language is spoken in the Canary Islands?   ,Spanish,8,25,HRV,HRV_0281,2022-11-30 20:29:11
+1.0,189,What instrument was invented to sound like a human singing? ,Violin,6,23,HRV,HRV_0281,2022-11-30 20:29:11
+2.0,433,"What nutrient comes from meat, eggs, and fish?",potein,Know,NaN,HRV,HRV_0281,2022-11-30 20:29:11
+3.0,239,"What noisy word comes from the capital of Hell in Milton's ""Paradise Lost""? ",Pandemonium,5,50,HRV,HRV_0281,2022-11-30 20:29:11
+4.0,328,Which animal's milk does not curdle? ,Camel,24,50,HRV,HRV_0281,2022-11-30 20:29:11
+5.0,386,Who won the Nobel Peace Prize in 1964? ,Martin Luther King Jr. ,3,50,HRV,HRV_0281,2022-11-30 20:29:11
+6.0,5,"""Welcome Stranger,"" the largest nugget of gold discovered, weighed 158 pounds and was discovered in what country?",Australia,3,24,HRV,HRV_0281,2022-11-30 20:29:11
+7.0,426,What two words were combined to make the word Spam?,spiced ham,3,25,HRV,HRV_0281,2022-11-30 20:29:11
+8.0,188,What industry uses 20% of China's harvested plants?  ,Medicine,4,49,HRV,HRV_0281,2022-11-30 20:29:11
+9.0,451,what vegetable loses its flavour the quickest?,Asparagus,5,50,HRV,HRV_0281,2022-11-30 20:29:11

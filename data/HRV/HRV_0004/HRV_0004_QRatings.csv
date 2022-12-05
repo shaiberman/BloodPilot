@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,447,What type of food is a peanut?,"A peanut is a legume, not a nut",99,99,HRV,HRV_0004,2022-11-30 17:46:39
+1.0,348,"Which museum hung Matisse's ""Le Bateau"" upsidedown for more than a month, until an art student noticed the error?",Museum of Modern Art in NYC ,1,0,HRV,HRV_0004,2022-11-30 17:46:39
+2.0,282,What was the first CD pressed for commerical release in the U.S.?,Bruce Springsteen's Born in the USA ,1,49,HRV,HRV_0004,2022-11-30 17:46:39
+3.0,127,What actor campaigned against helmet laws until he was almost killed in a helmetless 1988 motorcycle accident?,Gary Busey,0,49,HRV,HRV_0004,2022-11-30 17:46:39
+4.0,298,"What word for mud bricks comes to us from the ancient Egyptian word ""dbt""? ",Adobe,0,50,HRV,HRV_0004,2022-11-30 17:46:39
+5.0,409,What spice is named for the capital of French Guiana? ,Cayenne pepper ,1,74,HRV,HRV_0004,2022-11-30 17:46:39
+6.0,443,Baked beans are made from what type of bean?,Haricot beans,74,63,HRV,HRV_0004,2022-11-30 17:46:39
+7.0,21,"Anciently, what was the job description of a ""hierodule""?",Temple Prostitute,0,49,HRV,HRV_0004,2022-11-30 17:46:39
+8.0,89,The Admiral is which type of insect? ,Butterfly,100,98,HRV,HRV_0004,2022-11-30 17:46:39
+9.0,209,What is the only English word with three consecutive double letters?  ,Bookkeeper,74,73,HRV,HRV_0004,2022-11-30 17:46:39

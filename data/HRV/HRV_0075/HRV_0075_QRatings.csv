@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,433,"What nutrient comes from meat, eggs, and fish?",potein,95,94,HRV,HRV_0075,2022-11-30 18:10:32
+1.0,300,What's been released five times a year from January 1999 to fall 2008?,State quarters ,Know,NaN,HRV,HRV_0075,2022-11-30 18:10:32
+2.0,177,What five-letter word did Time magazine coin in 1926 to refer to left-leaners? ,Pinko,85,81,HRV,HRV_0075,2022-11-30 18:10:32
+3.0,430,"What are the sugared almonds, traditionally thrown over the bride and groom at a wedding, called?",Dragees,78,72,HRV,HRV_0075,2022-11-30 18:10:32
+4.0,66,In what organ of the body would you find the islets of Langerhans and the duct of Wirsung? ,Pancreas,64,69,HRV,HRV_0075,2022-11-30 18:10:32
+5.0,201,What is measured in becquerels? ,Radioactivity,Know,NaN,HRV,HRV_0075,2022-11-30 18:10:32
+6.0,361,Who beat out FDR and Gandhi to be named Time's Person of the Century in 1999? ,Albert Einstein,81,97,HRV,HRV_0075,2022-11-30 18:10:32
+7.0,341,"Which famous American landmark is officially called ""The Jefferson National Expansion Memorial""? ",St. Louis Gateway Arch ,97,100,HRV,HRV_0075,2022-11-30 18:10:32
+8.0,194,What is a female donkey called?,A jenny ,99,99,HRV,HRV_0075,2022-11-30 18:10:32
+9.0,416,"""Project Kansas"" was the name for the top secret 1985 attempt to revamp what product?",Coca-Cola,98,98,HRV,HRV_0075,2022-11-30 18:10:32

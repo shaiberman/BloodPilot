@@ -1,0 +1,142 @@
+Answer,C_Pay,Question,QuestionNum,jitter,C_Trial,C_QPresent,rsp,C_SWK,C_SWK_rt,C_TrialEnd,exp,subjectId,date
+Apple sauce,1,What was the first food eaten in space?,435,1.242,0,2939.600000143051,q,S,1727.2999999523163,6452.600000143051,HRV,HRV_0067,2022-11-30 17:36:21
+Kidnapping and killing the Lindbergh baby,1,For what crime was Bruno Hauptmann executed in 1936?,41,1.925,1,6452.600000143051,q,S,2457.899999856949,11369.300000190735,HRV,HRV_0067,2022-11-30 17:36:21
+The Mini Cooper,5,"With over 5.3 million sold since 1959, what's by far the most successful British car of all time?",394,1.973,2,11369.300000190735,q,S,1794.2999999523163,15669.700000047684,HRV,HRV_0067,2022-11-30 17:36:21
+Marriage,6,Gamophobia is the fear of what?,42,1.133,3,15669.700000047684,q,S,1581.2999999523163,18899.400000095367,HRV,HRV_0067,2022-11-30 17:36:21
+Model train set,3,HO scale is the world's most popular size of what?,45,1.503,4,18899.400000095367,q,S,1927.0999999046326,22849.200000047684,HRV,HRV_0067,2022-11-30 17:36:21
+General Electric ,5,What's the only stock from the original Dow Jones Industrial Average that's still used in computing the index?,310,1.043,5,22849.200000047684,q,S,2617.4000000953674,27049.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+The bishop,7,Which chess piece was originally called 'the elephant'? ,334,1.334,6,27049.700000047684,q,S,2186.2999999523163,31099.200000047684,HRV,HRV_0067,2022-11-30 17:36:21
+Orville Wright,4,Who was flying the plane in which the first US airplane fatality occurred? ,377,0.655,7,31099.200000047684,q,S,1972.4000000953674,34259.300000190735,HRV,HRV_0067,2022-11-30 17:36:21
+Sapphire,2,What type of stone is referred to as the Star of India?  ,270,0.824,8,34259.300000190735,q,S,1586.3999998569489,37189.40000009537,HRV,HRV_0067,2022-11-30 17:36:21
+A paper clip,7,"In 1849, Walter Hunt received a patent for turning a single piece of wire into what?",49,1.049,9,37189.40000009537,q,S,2186.5999999046326,40955.0,HRV,HRV_0067,2022-11-30 17:36:21
+A castrated rooster,3,What is a capon?  ,193,1.954,10,40955.200000047684,q,S,1993.9000000953674,45449.5,HRV,HRV_0067,2022-11-30 17:36:21
+George Marshall,2,What future secretary of state became America's first five-star general in December 1944? ,181,1.998,11,45449.700000047684,q,S,2225.9000000953674,50209.200000047684,HRV,HRV_0067,2022-11-30 17:36:21
+Violin,3,What instrument was invented to sound like a human singing? ,189,1.09,12,50209.300000190735,q,S,2797.7999999523163,54619.40000009537,HRV,HRV_0067,2022-11-30 17:36:21
+The Millenium Falcon ,2,"What could be built by the largest Lego set ever sold, a 5195-piece monstrosity? ",156,1.933,13,54619.5,q,S,2064.9000000953674,59159.300000190735,HRV,HRV_0067,2022-11-30 17:36:21
+The Hardy Boys ,7,"Who solves crimes in Bayport, located on Barmet Bay? ",374,0.687,14,59159.300000190735,q,S,2369.699999809265,62749.5,HRV,HRV_0067,2022-11-30 17:36:21
+Turkey,1,Which animal was named for what was wrongly thought to be its country of origin? ,326,1.433,15,62749.60000014305,q,S,2050.2999999523163,66778.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Oliver!,3,What's the only Best Picture Oscar winner whose title ends with an exclamation point?  ,306,1.984,16,66778.80000019073,q,S,2093.699999809265,71374.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Canadian Oil,1,What is canola an abbreviation for?,436,0.801,17,71374.80000019073,q,S,2389.7999999523163,75109.40000009537,HRV,HRV_0067,2022-11-30 17:36:21
+Poland,1,What EU nation was once led by a president and a prime minister who were identical twins? ,172,1.942,18,75109.40000009537,q,S,2302.5999999046326,79879.20000004768,HRV,HRV_0067,2022-11-30 17:36:21
+Theodore Roosevelt ,5,"What former president coined the phrase ""lunatic fringe"" to refer to the wackos in his own reform movement?",178,1.784,19,79879.30000019073,q,S,2559.0999999046326,84749.70000004768,HRV,HRV_0067,2022-11-30 17:36:21
+Spiro Agnew ,4,"What vice president referred to his critics as the ""nattering nabobs of negativism""? ",274,0.598,20,84750.0,q,S,1967.5,87859.30000019073,HRV,HRV_0067,2022-11-30 17:36:21
+A mine shaft passage,1,What is an adit?  ,197,0.657,21,87859.30000019073,q,S,1974.1999998092651,91029.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Geyser,4,What English word comes from the name of a hot spring in Iceland's Haukadalur valley? ,171,1.025,22,91029.60000014305,q,S,2528.5,95107.0,HRV,HRV_0067,2022-11-30 17:36:21
+a spit,4,"If something is described as rotisserie, what has it been cooked on?",428,0.8,23,95107.0,q,S,2992.600000143051,99419.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+spiced ham,3,What two words were combined to make the word Spam?,426,1.44,24,99419.60000014305,q,S,2982.7999999523163,104359.20000004768,HRV,HRV_0067,2022-11-30 17:36:21
+Avocados have twice the amount of potassium as bananas. ,7,Which fruit has more potassium than bananas?,455,1.045,25,104359.20000004768,q,S,1975.7999999523163,107929.30000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Pepper and Mustard,3,What are the top two most popular spices in the world?,422,1.642,26,107929.30000019073,q,S,1783.1999998092651,111889.30000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Graham Greene,1,"Which British novelist said, ""Fame is a powerful aphrodisiac""?",332,1.161,27,111889.40000009537,q,S,1824.5,115389.30000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Pig,3,What is the only type of animal besides a human that can get a sunburn?,212,1.556,28,115389.30000019073,q,S,2125.5999999046326,119599.5,HRV,HRV_0067,2022-11-30 17:36:21
+The Loch Ness Monster,3,"In 1994, Christian Spurling confessed that the so-called Surgeon's Photo of 1934 was a fake. What was pictured in it?",55,1.111,29,119599.5,q,S,3837.9000000953674,125069.5,HRV,HRV_0067,2022-11-30 17:36:21
+Louie Louie,5,What 1963 song led to a thirty-one month FBI investigation into supposed obscenities hidden in its unintelligible lyrics?,122,0.826,30,125069.5,q,S,3465.9000000953674,129889.10000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Pen(n)sylvania ,7,What proper name is spelled unusually with a single 'n' both on the Liberty Bell and in the U.S. Constitution? ,249,0.546,31,129889.10000014305,q,S,2296.0999999046326,133259.20000004768,HRV,HRV_0067,2022-11-30 17:36:21
+Condoleeza (con dolcezza) Rice ,2,"Whose unusual first name is derived from an Italian musical term for ""with sweetness""? ",390,1.414,32,133259.20000004768,q,S,2031.2000000476837,137239.10000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Copperhead snake,2,Which poisonous snake smells like fresh cut cucumbers? ,350,1.551,33,137239.10000014305,q,S,1875.7999999523163,141209.0,HRV,HRV_0067,2022-11-30 17:36:21
+J,1,What's the only letter that doesn't appear in the periodic table of elements?,309,1.495,34,141209.0,q,S,2337.800000190735,145569.70000004768,HRV,HRV_0067,2022-11-30 17:36:21
+Sudan,7,"Though an eleven-year ceasefire held from 1972 to 1983, what African country has been embroiled in a civil war since 1955?",115,1.728,35,145569.70000004768,q,S,3074.9000000953674,150899.20000004768,HRV,HRV_0067,2022-11-30 17:36:21
+Every jar of peanut butter must be at least 90% peanuts,3,What percentage of peanuts is found in a standard jar of peanut butter?,423,1.485,36,150899.20000004768,q,S,2469.7000000476837,155375.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+"The code is ""SUX"" ",7,Why has Sioux Falls Regional Airport in South Dakota been trying to change its three-letter airport designation for years?,392,1.927,37,155375.60000014305,q,S,3262.2999999523163,161089.10000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Smoke,1,"in 1908, New York City passed the Sullivan Ordinance which made it illegal for women to do what in public?",52,1.985,38,161089.10000014305,q,S,3090.2999999523163,166699.30000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Charles Babbage ,5,"What inventor of the Difference Engine once baked himself in an oven for five minutes, ""to see what would happen""?",192,1.849,39,166699.40000009537,q,S,3046.0999999046326,172119.20000004768,HRV,HRV_0067,2022-11-30 17:36:21
+The paper clip,7,"""Gem"" is the trade name for the most common, three-loop design of what?",4,1.054,40,172119.20000004768,q,S,2613.100000143051,176329.0,HRV,HRV_0067,2022-11-30 17:36:21
+Untethered space walk,4,Challenger Astronaut Bruce McCandless II became Earth's first human to ever do what?,31,0.56,41,176329.0,q,S,2576.800000190735,179999.30000019073,HRV,HRV_0067,2022-11-30 17:36:21
+A Spoonful of Sugar ,4,What classic Disney song was inspired by lyricist Robert Sherman's fiver-year old son receiving the Sabin polio vaccine at school?,420,1.062,42,179999.40000009537,q,S,3479.2999999523163,185074.30000019073,HRV,HRV_0067,2022-11-30 17:36:21
+A red giant ,2,"What kind of enormous, cool star will our own sun become in five billion years? ",224,0.677,43,185074.40000009537,q,S,3889.9000000953674,190189.0,HRV,HRV_0067,2022-11-30 17:36:21
+Phosphorus,5,"What element did alchemist Hennig Brand discover in 1669 when, boiling his own urine in the hopes of making gold, he observed glowing fumes?",169,1.0,44,190189.0,q,S,3515.7000000476837,195225.90000009537,HRV,HRV_0067,2022-11-30 17:36:21
+Rat,5,Which animal can go longer without water than a camel can? ,323,1.18,45,195225.90000009537,q,S,2924.2999999523163,199868.90000009537,HRV,HRV_0067,2022-11-30 17:36:21
+Dark Side of the Moon,7,What album spent a record 741 weeks on Billboard's Top 200 Albums chart? ,129,0.616,46,199868.90000009537,q,S,1967.4000000953674,202969.0,HRV,HRV_0067,2022-11-30 17:36:21
+It's stamped on the coin's edge.,4,"What is unusual about the ""in God We Trust"" Motto on the U.S. Mint's recent presidential dollar coins?",215,0.825,47,202969.0,q,S,2770.100000143051,207089.5,HRV,HRV_0067,2022-11-30 17:36:21
+Adding olive juice,1,What turns a plain martini into a dirty martini?,440,0.745,48,207089.5,q,S,1771.3000001907349,210129.10000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Coca-Cola,1,"The BBC once banned the Beatles' ""Come Together"" for ""advertising"" what product in the lyrics?",93,1.237,49,210129.10000014305,q,S,2420.2999999523163,214309.10000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Cygnet ,4,What is the name given to a young swan? ,207,1.342,50,214309.20000004768,q,S,1581.5,217754.20000004768,HRV,HRV_0067,2022-11-30 17:36:21
+Pearl Harbor ,3,What late-breaking news story kicked Dumbo off the cover of Time magazine six weeks after the elephant cartoon's release?,227,1.042,51,217754.20000004768,q,S,2475.0,221789.20000004768,HRV,HRV_0067,2022-11-30 17:36:21
+Tooth,3,What is the only part of the body that can't repair itself? ,210,1.747,52,221789.20000004768,q,S,1572.1000001430511,225629.10000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Vietnam,3,"In what country did the domesticated ""potbellied pig"" originate?",61,1.627,53,225629.10000014305,q,S,2265.5999999046326,230059.0,HRV,HRV_0067,2022-11-30 17:36:21
+Zinfindel,7,"What grape, used to make a popular California wine, is called Primitivo in Europe?  ",403,1.808,54,230059.0,q,S,1755.0,234168.90000009537,HRV,HRV_0067,2022-11-30 17:36:21
+citrus fruit (scurvy is caused by a lack of vitamin c),4,Sailors used to suffer from a horrible illness called scurvy. Which food prevents scurvy?,441,0.671,55,234168.90000009537,q,S,2706.7999999523163,238064.10000014305,HRV,HRV_0067,2022-11-30 17:36:21
+cheese ,6,What item of food holds the world record for being the most stolen item of food in the world?,444,1.593,56,238064.20000004768,q,S,2324.2999999523163,242518.90000009537,HRV,HRV_0067,2022-11-30 17:36:21
+Hawaii,3,Where is the only royal palace in the United States? ,321,1.926,57,242518.90000009537,q,S,2099.0,247049.30000019073,HRV,HRV_0067,2022-11-30 17:36:21
+"Third finger, left hand ",5,What part of his body did Keith Richards insure for a million pounds?,243,0.587,58,247049.30000019073,q,S,3037.2999999523163,251219.30000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Cornea,3,What is the only part of the body that has no blood supply? ,211,1.975,59,251219.30000019073,q,S,2240.699999809265,255969.20000004768,HRV,HRV_0067,2022-11-30 17:36:21
+The Oxford English Dictionary,3,"W.C. Minor, a murderer, spent the last decades of his life in an insane asylum writing hundreds of entries for what reference work? ",121,1.285,60,255969.20000004768,q,S,4479.100000143051,262254.10000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Woodrow Wilson ,7,"Which U.S. president declared the first national ""Mother's Day""?  ",355,1.857,61,262254.10000014305,q,S,1681.5999999046326,266318.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Haricot beans,1,Baked beans are made from what type of bean?,443,1.2,62,266318.80000019073,q,S,1892.0,269929.2000000477,HRV,HRV_0067,2022-11-30 17:36:21
+Holy Roman Emperor Henry IV ,4,Who did Pope Gregory VII leave in the snow outside of his castle gates for three full days?  ,365,1.878,63,269929.2000000477,q,S,2141.100000143051,274474.2000000477,HRV,HRV_0067,2022-11-30 17:36:21
+George Washington,6,Who is pictured on a US Purple Heart medal? ,368,1.717,64,274474.2000000477,q,S,2405.7999999523163,279119.10000014305,HRV,HRV_0067,2022-11-30 17:36:21
+"Cle(a)veland, Ohio",6,The name of which city permanently lost its first 'a' when the first issue of a newspaper was published in 1831 and they had to shorten it to fit on the paper's masthead?,102,1.487,65,279119.10000014305,q,S,3571.0999999046326,284718.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Air bags,4,"Sodium azide, a highly toxic chemical, is best-known for being used to develop what lifesaving devices?",84,1.642,66,284718.80000019073,q,S,2537.7999999523163,289428.90000009537,HRV,HRV_0067,2022-11-30 17:36:21
+Echinoderms,2,"Starfish belong to what animal phylum, whose name means ""spiny skin""? ",85,1.048,67,289428.90000009537,q,S,2256.0,293269.2000000477,HRV,HRV_0067,2022-11-30 17:36:21
+Pachyderm,1,"What word comes to us from the Greek for ""thick-skinned""?  ",297,0.925,68,293269.2000000477,q,S,2494.9000000953674,297219.0,HRV,HRV_0067,2022-11-30 17:36:21
+Kiwi,1,"Which bird species has survived more than 70 million years, despite the fact that it lays one egg a year and is nearly blind?",331,1.233,69,297219.0,q,S,2771.7000000476837,301739.0,HRV,HRV_0067,2022-11-30 17:36:21
+It causes sour foods subsequently consumed to taste sweet. ,3,Why is the Synsepalum dulcificum berry called the miracle fruit?,464,1.657,70,301739.0,q,S,2298.600000143051,306229.0,HRV,HRV_0067,2022-11-30 17:36:21
+A Hawaiian goose,1,What is a nene?,195,1.134,71,306229.0,q,S,1957.5,309849.0,HRV,HRV_0067,2022-11-30 17:36:21
+Adam,7,What did Coleco name its 1983 home computer in the hope that it would take a bit out of Apple's sales?,162,0.938,72,309849.0,q,S,3640.800000190735,314954.7000000477,HRV,HRV_0067,2022-11-30 17:36:21
+Near Alaska,1,The fictional nation of Brobdingnag from Gulliver's Travels is presumed to be where?,98,0.744,73,314954.7000000477,q,S,2141.0,318374.0,HRV,HRV_0067,2022-11-30 17:36:21
+The Hindenburg explosion,1,"What event inspired Herbert Morrison's famous quote ""Oh, the humanity!""?",174,1.019,74,318374.10000014305,q,S,3652.899999856949,323588.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Choking on food,4,"Each year, approximately 125 people die of what? ",417,1.205,75,323588.7000000477,q,S,2158.7999999523163,327488.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Captain Cook ,2,"Who christened Hawaii ""the Sandwich Islands"" in 1778?  ",363,1.334,76,327488.80000019073,q,S,1630.2999999523163,330968.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Let's spend some time together,3,"In 1967, what did The Ed Sullivan Show force the Rolling Stones to sing instead of the title of their song ""Let's Spend the Night Together""?",54,1.121,77,330968.80000019073,q,S,2924.399999856949,335559.10000014305,HRV,HRV_0067,2022-11-30 17:36:21
+OutKast,4,Who was sued in 1999 by Rosa Parks after they used her name to title a hit song?  ,379,1.967,78,335559.10000014305,q,S,2823.2000000476837,340868.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+On Christ's crucifix ,7,"Where did the abbreviation ""INRI"" traditionally appear? ",315,1.01,79,340868.7000000477,q,S,2178.7999999523163,344588.90000009537,HRV,HRV_0067,2022-11-30 17:36:21
+Midnight Cowboy ,5,What was the only X-rated film to win the Academy Award for Best Picture?  ,293,1.847,80,344588.90000009537,q,S,1919.4000000953674,348879.0,HRV,HRV_0067,2022-11-30 17:36:21
+There was a pound of every ingredient in the original reciipe. ,1,How did the pound cake get its name?,460,1.68,81,348879.0,q,S,1982.8000001907349,353078.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Apples. They don't have caffeine but the natural sugar and vitamins release slowly and make you feel more awake. ,4,Whice fruit is effective than coffee at waking you up in the morning?,454,0.715,82,353078.80000019073,q,S,2483.0999999046326,356798.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Avocado,1,Pet parrots can eat most human foods except chocolate and which pitted food?  ,398,0.588,83,356798.80000019073,q,S,2670.199999809265,360598.7000000477,HRV,HRV_0067,2022-11-30 17:36:21
+Silicon,2,What element is combined with oxygen to make up the mineral quartz?,269,1.327,84,360598.7000000477,q,S,2055.4000000953674,364499.10000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Butterfly,7,The Admiral is which type of insect? ,89,1.618,85,364499.10000014305,q,S,2205.2999999523163,368858.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Tse-tse fly,7,What transmits the disease typanosomiasis to humans and cattle? ,267,1.825,86,368858.80000019073,q,S,2742.199999809265,373944.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Rechargeable batteries,6,"Three quarters of the cadmium mined annually is used, with nickel, to make what household items?",117,1.496,87,373944.60000014305,q,S,3994.2000000476837,379968.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+New Jersey's Rutgers,5,Which U.S. state's leading public university is the only one not to be named for the state?  ,357,1.778,88,379968.7000000477,q,S,3131.2000000476837,385398.90000009537,HRV,HRV_0067,2022-11-30 17:36:21
+Chicago,3,What city has the only drive-thru post office in the world? ,147,1.589,89,385398.90000009537,q,S,1596.9000000953674,389108.90000009537,HRV,HRV_0067,2022-11-30 17:36:21
+Teapot Dome scandal,5,Albert Fall became the first US cabinet officer to serve jail time for his part in what scandal? ,19,1.685,90,389108.90000009537,q,S,3043.5,394368.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Frankie Avalon ,6,"Who had the last number one hit of the 1950s with his song ""Why""? ",367,0.93,91,394368.80000019073,q,S,2664.0,398498.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Death,7,"In ancient Egypt, what was the penalty for killing a cat?",58,1.133,92,398498.80000019073,q,S,1933.5,402098.90000009537,HRV,HRV_0067,2022-11-30 17:36:21
+Tim McGraw,5,"At age 11, who accidentally discovered the true identity of his baseball pitcher father while searching his mother's closet for hidden Christmas presents? ",24,0.703,93,402098.90000009537,q,S,3654.4000000953674,406988.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+A wiki,5,"What kind of information resource takes its name from a Hawaiian word for ""quick""? ",225,1.884,94,406988.90000009537,q,S,2265.0,411658.7000000477,HRV,HRV_0067,2022-11-30 17:36:21
+Bacon,2,"In Britain, what kind of meat comes in rashers?",397,1.511,95,411658.7000000477,q,S,2264.2000000476837,415978.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Ian Thorpe ,3,Who outgrew a childhood chlorine allergy to become the biggest Olympic medal winner in Australian history? ,370,0.93,96,415978.60000014305,q,S,3344.2999999523163,420778.5,HRV,HRV_0067,2022-11-30 17:36:21
+Broccoli! ,5,Whice vegeteable has more vitamin C than an orange and as much calcium as whole milk?,456,1.438,97,420778.5,q,S,2633.7000000476837,425388.40000009537,HRV,HRV_0067,2022-11-30 17:36:21
+The crocodile,3,The Egyptian plover is a bird best known for its symbiotic relationship with what host animal?,95,0.938,98,425388.5,q,S,3090.300000190735,429938.5,HRV,HRV_0067,2022-11-30 17:36:21
+Coca-cola,6,What popular drink was first marketed as a brain tonic?,405,1.921,99,429938.5,q,S,1648.4000000953674,434038.5,HRV,HRV_0067,2022-11-30 17:36:21
+Sic semper tyrannis ,4,What state motto of Virginia did John Wilkes Booth shout as he jumped from Lincoln's box to the stage of Ford's Theatre? ,262,1.932,100,434038.5,q,S,2563.2000000476837,439048.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+"the white flesh that houses the seeds, known as the placenta",1,What is the hottest part of a chili?,432,1.032,101,439048.90000009537,q,S,1527.7999999523163,442128.90000009537,HRV,HRV_0067,2022-11-30 17:36:21
+Tea leaves,6,Tasseomancy is a method of fortune telling that primarily uses what? ,418,0.672,102,442128.90000009537,q,S,2924.0,446258.7000000477,HRV,HRV_0067,2022-11-30 17:36:21
+"Puffer fish, if they are prepared incorrectly thheir poison could kill the eater. ",3,Cooking which food requires over two years of training?,461,1.936,103,446258.80000019073,q,S,3882.899999856949,452598.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Westminster Kennel Club dog show ,7,What is the second oldest continuously held American sporting event?  ,214,1.19,104,452598.80000019073,q,S,2895.0,457208.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Poison-arrow frog,2,"Which animal's poison could kill up to 2,200 people? ",329,1.067,105,457208.80000019073,q,S,1573.3999998569489,460368.5,HRV,HRV_0067,2022-11-30 17:36:21
+Queen Isabella I ,5,"In 1893, who became the first woman ever to appear on a U.S. postage stamp?",50,0.672,106,460368.5,q,S,2018.7000000476837,463578.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Aluminum,3,Bauxite ore is mined so it can be processed into what metal?,25,1.502,107,463578.60000014305,q,S,1824.2000000476837,467428.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+The Korean War,3,"What 20th-century conflict was dubbed the ""forgotten war"" despite over 50,000 U.S. deaths?",126,0.614,108,467428.60000014305,q,S,2025.2999999523163,470588.7000000477,HRV,HRV_0067,2022-11-30 17:36:21
+Shoe sizes,1,"In Europe, but not the U.S., what are measured in ""Paris Points""?",59,0.769,109,470588.7000000477,q,S,2257.9000000953674,474143.90000009537,HRV,HRV_0067,2022-11-30 17:36:21
+Bruce Springsteen's Born in the USA ,5,What was the first CD pressed for commerical release in the U.S.?,282,1.364,110,474143.90000009537,q,S,1787.7999999523163,477828.7000000477,HRV,HRV_0067,2022-11-30 17:36:21
+Shenandoah Valley,2,What area changed hands 72 times during the Civil War? ,139,0.684,111,477828.7000000477,q,S,1547.5,480578.5,HRV,HRV_0067,2022-11-30 17:36:21
+coca-cola,4,Which famous soft drink was invented in 1892?,425,1.993,112,480578.5,q,S,1860.2000000476837,484953.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Papillae,2,What are the bumps on the tongue that carry the taste buds called? ,137,1.912,113,484953.80000019073,q,S,3353.5,490748.80000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Cell,5,Robert Hooke coined what scientific term after looking at a piece of cork under a microscope?,81,1.672,114,490748.80000019073,q,S,3047.899999856949,495998.60000014305,HRV,HRV_0067,2022-11-30 17:36:21
+Honey,7,"What food, still edible, was found by archaeologists in the tombs of Egyptian pharaohs? ",402,0.861,115,495998.80000019073,q,S,2514.2999999523163,499898.30000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Cheetah,7,Which is the only cat that cannot retract its claws? ,344,0.839,116,499898.40000009537,q,S,2083.2000000476837,503358.7000000477,HRV,HRV_0067,2022-11-30 17:36:21
+Rabbit,3,What kind of animal attacked Jimmy Carter during an April 1979 fishing trip?   ,221,1.563,117,503358.7000000477,q,S,2272.0,507728.2000000477,HRV,HRV_0067,2022-11-30 17:36:21
+Ginseng ,2,"What plant takes its name for the Chinese words for ""man root""? ",245,1.779,118,507728.2000000477,q,S,2276.0,512328.30000019073,HRV,HRV_0067,2022-11-30 17:36:21
+Mung beans ,2,What kind of bean produces the Asian-style bean sprouts in the produce section of supermarkets? ,404,1.421,119,512328.40000009537,q,S,2546.5999999046326,516838.5,HRV,HRV_0067,2022-11-30 17:36:21
+Silver,5,What metal was found in Nevada's famed Comstock Lode?  ,230,1.358,120,516838.5,q,S,3134.600000143051,521868.7000000477,HRV,HRV_0067,2022-11-30 17:36:21
+chickpeas,1,What is used to make hummus?,424,0.701,121,521868.7000000477,q,S,2658.7999999523163,525758.7000000477,HRV,HRV_0067,2022-11-30 17:36:21
+Tuesday,4,Greeks consider which day of the week the unluckiest because it is the day that Constantinople fell in 1453? ,43,1.161,122,525758.7000000477,q,S,4051.7000000476837,531518.4000000954,HRV,HRV_0067,2022-11-30 17:36:21
+Equal Employment Opportunity Commission ,6,"What federal agency, which targets workplace discrimination, was chaired by Clarence Thomas for most of the 1980s?",176,1.745,123,531518.4000000954,q,S,3335.2000000476837,537118.5,HRV,HRV_0067,2022-11-30 17:36:21
+A Cheeta born in 1932,1,Who is the world's oldest (non-human) primate on record?  ,369,0.904,124,537118.5,q,S,1691.0,540248.600000143,HRV,HRV_0067,2022-11-30 17:36:21
+The crust and the mantle,1,"The ""Mohorovicic discontinuity"" divides what two outer layers of the earth?",87,1.269,125,540248.600000143,q,S,2053.5,544093.7000000477,HRV,HRV_0067,2022-11-30 17:36:21
+The Ritz (Hotel),6,"F. Scott Fitzgerald wrote a famous short story about ""A Diamond as Big as"" what New York landmark?",39,1.779,126,544093.7000000477,q,S,2821.0,549238.7000000477,HRV,HRV_0067,2022-11-30 17:36:21
+Charles ,1,What river runs through Boston? ,252,0.638,127,549238.8000001907,q,S,1621.7999999523163,552038.600000143,HRV,HRV_0067,2022-11-30 17:36:21
+The Netherlands,2,In 1568 the Catholic Church sentenced the entire population of which nation to death as heretics?,47,1.166,128,552038.600000143,q,S,2396.399999856949,556128.5,HRV,HRV_0067,2022-11-30 17:36:21
+the skin and bones of animals,7,What is gelatin made from?,445,1.05,129,556128.5,q,S,1723.8000001907349,559428.5,HRV,HRV_0067,2022-11-30 17:36:21
+Habanero,4,What chili pepper was believed the hottest in the world until the Naga Jolokia pepper was discovered in India in 2000?,401,0.864,130,559428.5,q,S,2684.5,563488.8000001907,HRV,HRV_0067,2022-11-30 17:36:21
+Grace Kelly ,5,What was the name of the American actress who was first to appear on a postage stamp?  ,288,1.125,131,563488.8000001907,q,S,2307.199999809265,567458.5,HRV,HRV_0067,2022-11-30 17:36:21
+Lhasa Apso,1,"What is called the ""bark lion sentinel dog"" in its native Tibet?  ",200,1.819,132,567458.600000143,q,S,1744.0,571558.7000000477,HRV,HRV_0067,2022-11-30 17:36:21
+KISS ,2,"According to the Guinness Book of Records, what was the loudest rock band ever?",13,1.616,133,571558.8000001907,q,S,1641.5,575328.3000001907,HRV,HRV_0067,2022-11-30 17:36:21
+Sugar-sweetened beverages are likely the most fattening becaause they are not registered as consumed calories. ,4,What is the most fattening product in the modern diet?,457,0.524,134,575328.3000001907,q,S,3688.7999999523163,580068.5,HRV,HRV_0067,2022-11-30 17:36:21
+Criss-Cross ,6,What was the game of Scrabble originally called? ,286,1.974,135,580068.5,q,S,1700.1000001430511,584258.3000001907,HRV,HRV_0067,2022-11-30 17:36:21
+"A peanut is a legume, not a nut",3,What type of food is a peanut?,447,0.911,136,584258.4000000954,q,S,2099.5,587808.5,HRV,HRV_0067,2022-11-30 17:36:21
+Paris,5,"What city is home to the world's very first pet cemetery, in which Rin Tin Tin is buried?",148,0.736,137,587808.7000000477,q,S,2219.7000000476837,591308.2000000477,HRV,HRV_0067,2022-11-30 17:36:21
+George Orwell ,5,"Whose first book was ""Down and Out in Paris and London"", about his year among the poverty-stricken underclass of those cities?",388,0.943,138,591308.3000001907,q,S,2562.5999999046326,595343.600000143,HRV,HRV_0067,2022-11-30 17:36:21
+On a Jell-O box,3,"Where would you see the consumer warning ""Do not use fresh or frozen pineapple, kiwi, ginger-root, papaya, figs, or guava""?",411,0.612,139,595343.600000143,q,S,2638.399999856949,599118.2000000477,HRV,HRV_0067,2022-11-30 17:36:21
+China,3,Which country first used the decimal system?  ,338,1.264,140,599118.2000000477,q,S,2092.7999999523163,603018.2000000477,HRV,HRV_0067,2022-11-30 17:36:21

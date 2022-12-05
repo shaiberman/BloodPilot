@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,283,What was the first English play to be written especially for children? ,Peter Pan ,49,87,HRV,HRV_0018,2022-11-30 17:56:01
+1.0,270,What type of stone is referred to as the Star of India?  ,Sapphire,71,49,HRV,HRV_0018,2022-11-30 17:56:01
+2.0,4,"""Gem"" is the trade name for the most common, three-loop design of what?",The paper clip,88,87,HRV,HRV_0018,2022-11-30 17:56:01
+3.0,453,What amount of insects does the FDA allow in chocolate,60 fragments per 100 gram ,74,87,HRV,HRV_0018,2022-11-30 17:56:01
+4.0,361,Who beat out FDR and Gandhi to be named Time's Person of the Century in 1999? ,Albert Einstein,91,97,HRV,HRV_0018,2022-11-30 17:56:01
+5.0,273,"What US state advertised ""The Greatest Snow on Earth"" on its license plates? ",Utah,74,75,HRV,HRV_0018,2022-11-30 17:56:01
+6.0,433,"What nutrient comes from meat, eggs, and fish?",potein,Know,NaN,HRV,HRV_0018,2022-11-30 17:56:01
+7.0,248,What product did Herbert Lapidus invent in 1974 by impregnanting latex rubber with coconut charcoal?,Odor Eaters ,74,89,HRV,HRV_0018,2022-11-30 17:56:01
+8.0,113,"Thimpu, the capital of Bhutan, is known for being the only world capital without any what?",Traffic lights,74,74,HRV,HRV_0018,2022-11-30 17:56:01
+9.0,427,How much caffeine needs to be taken out of coffee for it to be described as decaffeinated?,at least 97%,74,74,HRV,HRV_0018,2022-11-30 17:56:01

@@ -1,0 +1,83 @@
+Answer,C_Pay,Question,QuestionNum,jitter,C_Trial,C_QPresent,rsp,C_SWK,C_SWK_rt,C_TrialEnd,exp,subjectId,date
+Luge,6,What sports term is the shortest word ever to decide the National Spelling Bee?   ,261,1.76,0,1895.0,q,S,5226.900000095367,9413.400000095367,HRV,HRV_0219,2022-11-30 18:43:14
+Graham Greene,7,"Which British novelist said, ""Fame is a powerful aphrodisiac""?",332,1.183,1,9413.5,q,S,3806.7000000476837,14919.200000047684,HRV,HRV_0219,2022-11-30 18:43:14
+It's stamped on the coin's edge.,2,"What is unusual about the ""in God We Trust"" Motto on the U.S. Mint's recent presidential dollar coins?",215,1.953,2,14919.299999952316,p,K,4219.5,21616.400000095367,HRV,HRV_0219,2022-11-30 18:43:14
+All in the Family ,5,"What's the only TV show to top the Nielsen ratings five seasons in a row, from 1972 to 1976?  ",311,1.677,3,21616.400000095367,q,S,4253.799999952316,28071.60000014305,HRV,HRV_0219,2022-11-30 18:43:14
+The sky,3,The Linke Scale is used to measure the blueness of what?,101,1.152,4,28071.60000014305,q,S,3964.699999809265,33701.0,HRV,HRV_0219,2022-11-30 18:43:14
+Delaware,3,"Excepting Alaska and Louisiana, what US state is divided into the fewest counties, with only three?",38,1.217,5,33701.0,p,K,5442.100000143051,40895.60000014305,HRV,HRV_0219,2022-11-30 18:43:14
+A Cheeta born in 1932,2,Who is the world's oldest (non-human) primate on record?  ,369,1.256,6,40895.700000047684,q,S,4005.7000000476837,46682.0,HRV,HRV_0219,2022-11-30 18:43:14
+The old-fashioned,6,"What whiskey cocktail lends its name to the short glass also called a ""lowball""?",410,1.061,7,46682.0,q,S,4062.0,52342.5,HRV,HRV_0219,2022-11-30 18:43:14
+Cell,1,Robert Hooke coined what scientific term after looking at a piece of cork under a microscope?,81,1.471,8,52342.60000014305,q,S,5040.199999809265,59380.0,HRV,HRV_0219,2022-11-30 18:43:14
+Great Britain,6,"Of the world's seven most populous islands, what's the only one not in Asia? ",76,1.002,9,59380.0,q,S,6317.799999952316,67230.79999995232,HRV,HRV_0219,2022-11-30 18:43:14
+Thrust,2,What term for a rocket's propulsive force is calculated by multiplying its exhaust velocity by the burn rate of its fuel?,265,0.635,10,67230.79999995232,q,S,6897.5,75279.5,HRV,HRV_0219,2022-11-30 18:43:14
+The Netherlands,4,In 1568 the Catholic Church sentenced the entire population of which nation to death as heretics?,47,0.675,11,75279.60000014305,q,S,6499.599999904633,82984.40000009537,HRV,HRV_0219,2022-11-30 18:43:14
+Blue,2,Lobster blood is what color?,73,1.621,12,82984.5,p,K,5693.200000047684,90818.40000009537,HRV,HRV_0219,2022-11-30 18:43:14
+Germany,7,Which European country was the first to produce decaffeinated coffee? ,412,0.992,13,90818.40000009537,q,S,4210.0,96541.40000009537,HRV,HRV_0219,2022-11-30 18:43:14
+Museum of Modern Art in NYC ,5,"Which museum hung Matisse's ""Le Bateau"" upsidedown for more than a month, until an art student noticed the error?",348,1.48,14,96541.40000009537,q,S,6821.5,105361.40000009537,HRV,HRV_0219,2022-11-30 18:43:14
+A paper clip,5,"In 1849, Walter Hunt received a patent for turning a single piece of wire into what?",49,0.752,15,105361.5,q,S,6829.299999952316,113477.70000004768,HRV,HRV_0219,2022-11-30 18:43:14
+Tim McGraw,3,"At age 11, who accidentally discovered the true identity of his baseball pitcher father while searching his mother's closet for hidden Christmas presents? ",24,1.445,16,113477.70000004768,q,S,6819.099999904633,122261.29999995232,HRV,HRV_0219,2022-11-30 18:43:14
+Adlai Stevenson,7,Who twice lost presidential elections to Dwight Eisenhower in the 1950s?  ,375,0.567,17,122261.29999995232,p,K,4870.100000143051,128234.60000014305,HRV,HRV_0219,2022-11-30 18:43:14
+Czechoslovakia,5,Shirley Temple Black was the U.S. ambassador to what nation at the time of its 1989 revolution?,83,0.829,18,128234.60000014305,q,S,6687.5,136277.0,HRV,HRV_0219,2022-11-30 18:43:14
+Adding olive juice,5,What turns a plain martini into a dirty martini?,440,1.029,19,136277.0,q,S,4567.799999952316,142381.0,HRV,HRV_0219,2022-11-30 18:43:14
+The paper clip,1,"""Gem"" is the trade name for the most common, three-loop design of what?",4,1.576,20,142381.0,q,S,5518.400000095367,149997.29999995232,HRV,HRV_0219,2022-11-30 18:43:14
+Kansas City ,7,The first suburban shopping center in the U.S. was established in what city?,99,0.798,21,149997.29999995232,q,S,5921.700000047684,157258.5,HRV,HRV_0219,2022-11-30 18:43:14
+"Puffer fish, if they are prepared incorrectly thheir poison could kill the eater. ",7,Cooking which food requires over two years of training?,461,1.022,22,157258.5,q,S,4922.400000095367,163728.79999995232,HRV,HRV_0219,2022-11-30 18:43:14
+Texas,3,"In what state was the U.S.'s first ""Adopt-a-Highway"" program started?",67,0.503,23,163728.90000009537,q,S,4775.299999952316,169530.79999995232,HRV,HRV_0219,2022-11-30 18:43:14
+South Africa,7,In what country was the largest rough diamond ever discovered?,62,0.803,24,169530.79999995232,q,S,2627.300000190735,173486.90000009537,HRV,HRV_0219,2022-11-30 18:43:14
+Japan ,1,What nation is home to the only tunnel in the world longer than the Chunnel?  ,236,1.038,25,173486.90000009537,q,S,5714.200000047684,180767.0,HRV,HRV_0219,2022-11-30 18:43:14
+New Jersey's Rutgers,5,Which U.S. state's leading public university is the only one not to be named for the state?  ,357,0.621,26,180767.0,q,S,6752.299999952316,188672.60000014305,HRV,HRV_0219,2022-11-30 18:43:14
+Phosphorus,6,"What element did alchemist Hennig Brand discover in 1669 when, boiling his own urine in the hopes of making gold, he observed glowing fumes?",169,1.647,27,188672.70000004768,q,S,7065.5,197916.90000009537,HRV,HRV_0219,2022-11-30 18:43:14
+Ciabatta,3,"What sandwich bread, because of its shape, takes its name from the Italian for ""carpet slipper""? ",406,1.523,28,197916.90000009537,q,S,6459.700000047684,206434.90000009537,HRV,HRV_0219,2022-11-30 18:43:14
+Eisenhower ,3,Who was president when the first U.S. presidential news conference was filmed for TV?,378,1.698,29,206434.90000009537,q,S,7433.599999904633,216090.70000004768,HRV,HRV_0219,2022-11-30 18:43:14
+Bouquet,3,"Young wines are said to have ""aroma."" What do older wines have instead?",395,0.619,30,216090.79999995232,q,S,7813.700000047684,225061.29999995232,HRV,HRV_0219,2022-11-30 18:43:14
+James Buchanan ,7,Who was the only U.S. president never to be married?,383,1.914,31,225061.40000009537,p,K,6466.099999904633,233981.60000014305,HRV,HRV_0219,2022-11-30 18:43:14
+It causes sour foods subsequently consumed to taste sweet. ,2,Why is the Synsepalum dulcificum berry called the miracle fruit?,464,1.105,32,233981.60000014305,q,S,3949.199999809265,239550.10000014305,HRV,HRV_0219,2022-11-30 18:43:14
+India,4,What's the only country outside Africa where lions still live in the wild?  ,307,1.339,33,239550.10000014305,q,S,6050.799999952316,247477.20000004768,HRV,HRV_0219,2022-11-30 18:43:14
+Avocado,7,Pet parrots can eat most human foods except chocolate and which pitted food?  ,398,0.598,34,247477.20000004768,p,K,5258.900000095367,253865.20000004768,HRV,HRV_0219,2022-11-30 18:43:14
+Apples. They don't have caffeine but the natural sugar and vitamins release slowly and make you feel more awake. ,7,Whice fruit is effective than coffee at waking you up in the morning?,454,1.366,35,253865.29999995232,q,S,6308.800000190735,262054.79999995232,HRV,HRV_0219,2022-11-30 18:43:14
+8 Mile Road ,2,"What road, which names a 2002 film, divides Wayne County from affluent Oakland and Maycomb Counties?",254,1.527,36,262054.90000009537,,,,271594.2000000477,HRV,HRV_0219,2022-11-30 18:43:14
+Bacon,4,"In Britain, what kind of meat comes in rashers?",397,0.608,37,271594.2000000477,q,S,4407.900000095367,277131.7999999523,HRV,HRV_0219,2022-11-30 18:43:14
+Buck,4,"What's the name of the dog who is the hero of Jack London's ""The Call of the Wild""?   ",305,0.683,38,277131.7999999523,q,S,3192.4000000953674,281538.2000000477,HRV,HRV_0219,2022-11-30 18:43:14
+Albert Einstein,1,Who beat out FDR and Gandhi to be named Time's Person of the Century in 1999? ,361,0.54,39,281538.2000000477,q,S,6004.799999952316,288623.7999999523,HRV,HRV_0219,2022-11-30 18:43:14
+Hawaii,5,Where is the only royal palace in the United States? ,321,1.906,40,288623.90000009537,q,S,5405.599999904633,296458.0,HRV,HRV_0219,2022-11-30 18:43:14
+Orca (Killer Whale) ,2,Which is the largest species of dolphin? ,343,1.488,41,296458.0,p,K,2886.100000143051,301370.40000009537,HRV,HRV_0219,2022-11-30 18:43:14
+Butt,1,The adjective callipygian refers to someone who has a beautiful what? ,88,0.606,42,301370.40000009537,q,S,4636.299999952316,307143.90000009537,HRV,HRV_0219,2022-11-30 18:43:14
+Matches,7,John Walker invented what common household item having accidentally mixed potassium chlorate and antimony sulfide the previous year?,72,0.646,43,307143.90000009537,q,S,7665.399999856949,315983.60000014305,HRV,HRV_0219,2022-11-30 18:43:14
+Tea leaves,3,Tasseomancy is a method of fortune telling that primarily uses what? ,418,0.627,44,315983.60000014305,q,S,6504.5,323642.7000000477,HRV,HRV_0219,2022-11-30 18:43:14
+Asparagus,1,what vegetable loses its flavour the quickest?,451,1.298,45,323642.7999999523,q,S,6368.400000095367,331838.40000009537,HRV,HRV_0219,2022-11-30 18:43:14
+citrus fruit (scurvy is caused by a lack of vitamin c),5,Sailors used to suffer from a horrible illness called scurvy. Which food prevents scurvy?,441,0.588,46,331838.5,p,K,5067.200000047684,338024.60000014305,HRV,HRV_0219,2022-11-30 18:43:14
+lobster,3,Which expensive restaurant item used to be fed to pisinors and servants?,449,0.944,47,338024.60000014305,q,S,8236.399999856949,347727.2999999523,HRV,HRV_0219,2022-11-30 18:43:14
+spiced ham,7,What two words were combined to make the word Spam?,426,1.868,48,347727.2999999523,p,K,6652.0,356776.10000014305,HRV,HRV_0219,2022-11-30 18:43:14
+Haddock,4,"If you ordered an Omelet Arnold Bennett, what fish would you find in it?",429,1.593,49,356776.2000000477,q,S,5094.099999904633,363992.2000000477,HRV,HRV_0219,2022-11-30 18:43:14
+OutKast,3,Who was sued in 1999 by Rosa Parks after they used her name to title a hit song?  ,379,1.929,50,363992.2000000477,q,S,5580.599999904633,372013.5,HRV,HRV_0219,2022-11-30 18:43:14
+Ripe cranerries bounce when dropped on the ground,5,How do farmers test whether cranberries are ripe?,452,1.797,51,372013.5,q,S,2786.2000000476837,377130.0,HRV,HRV_0219,2022-11-30 18:43:14
+On a Jell-O box,7,"Where would you see the consumer warning ""Do not use fresh or frozen pineapple, kiwi, ginger-root, papaya, figs, or guava""?",411,0.763,52,377130.0,q,S,8406.5,386814.60000014305,HRV,HRV_0219,2022-11-30 18:43:14
+Cockroach,7,What animal can live up to a week without its head?,131,1.798,53,386814.60000014305,p,K,4628.199999809265,393770.2000000477,HRV,HRV_0219,2022-11-30 18:43:14
+"the Red Hot Chili Peppers, followed closely by Meatloaf",1,Some bands share a name with a food. Which band named after a foodstuff has sold the most records?,439,0.754,54,393770.2000000477,q,S,8271.799999952316,403325.0,HRV,HRV_0219,2022-11-30 18:43:14
+"A peanut is a legume, not a nut",5,What type of food is a peanut?,447,0.534,55,403325.0,p,K,3635.2999999523163,408014.40000009537,HRV,HRV_0219,2022-11-30 18:43:14
+Medicine,7,What industry uses 20% of China's harvested plants?  ,188,0.881,56,408014.40000009537,q,S,6908.700000047684,416317.2999999523,HRV,HRV_0219,2022-11-30 18:43:14
+Ozone,3,"What molecule is named for the Greek word for ""smell,"" because of the odor associated with lightning storms?",232,1.27,57,416317.2999999523,q,S,7028.5,425143.2999999523,HRV,HRV_0219,2022-11-30 18:43:14
+coca-cola,3,Which famous soft drink was invented in 1892?,425,1.328,58,425143.2999999523,p,K,4773.200000047684,431768.7999999523,HRV,HRV_0219,2022-11-30 18:43:14
+Kayak,1,An umiak is a larger version of what? ,20,1.625,59,431768.90000009537,q,S,3530.0999999046326,437451.2000000477,HRV,HRV_0219,2022-11-30 18:43:14
+Zinfindel,7,"What grape, used to make a popular California wine, is called Primitivo in Europe?  ",403,1.34,60,437451.2000000477,q,S,5970.299999952316,445287.90000009537,HRV,HRV_0219,2022-11-30 18:43:14
+The Atlas,6,"The U.S.'s first successful ICBM was what rocket named for a Titan of Greek myth, later used to launch John Glenn into orbit?",107,0.985,61,445287.90000009537,q,S,7873.0,454676.10000014305,HRV,HRV_0219,2022-11-30 18:43:14
+Joan of Arc's ,3,"Whose remains were thrown in the Seine River on May 30, 1431? ",389,0.727,62,454676.10000014305,p,K,6783.599999904633,462718.7000000477,HRV,HRV_0219,2022-11-30 18:43:14
+Bling bling ,6,What term does rapper B.G. say he wishes he'd patented when he used it for the title of his massive 1999 hit?,264,1.361,63,462718.7000000477,,,,472245.90000009537,HRV,HRV_0219,2022-11-30 18:43:14
+Tooth,1,What is the only part of the body that can't repair itself? ,210,1.461,64,472245.90000009537,p,K,6351.5,480582.7000000477,HRV,HRV_0219,2022-11-30 18:43:14
+Coca-cola,3,What popular drink was first marketed as a brain tonic?,405,1.466,65,480582.7999999523,q,S,4400.900000095367,486967.0,HRV,HRV_0219,2022-11-30 18:43:14
+Orville Wright,2,Who was flying the plane in which the first US airplane fatality occurred? ,377,0.678,66,486967.0,q,S,4347.100000143051,492517.2000000477,HRV,HRV_0219,2022-11-30 18:43:14
+Martin Luther King Jr. ,7,What civil rights leader did Dorothy Parker leave the bulk of her estate to?,149,1.238,67,492517.2000000477,q,S,5235.799999952316,499523.10000014305,HRV,HRV_0219,2022-11-30 18:43:14
+Oklahoma,5,"What U.S. state has the slogan ""Native America"" on its license plates?",271,1.587,68,499523.10000014305,p,K,5329.399999856949,506968.2999999523,HRV,HRV_0219,2022-11-30 18:43:14
+World War I,3,"During which war was ""The African Queen"" set?",34,0.721,69,506968.40000009537,p,K,5226.0,513443.10000014305,HRV,HRV_0219,2022-11-30 18:43:14
+Italy ,6,What country borders both of the world's only two nations with square flags? ,157,0.889,70,513443.2000000477,q,S,4050.2000000476837,518903.5,HRV,HRV_0219,2022-11-30 18:43:14
+Lou Gehrig,5,"In 1934, five years before his retirement, who became the first athlete to appear on a Wheaties box? ",53,1.96,71,518903.5,q,S,7132.100000143051,528519.5,HRV,HRV_0219,2022-11-30 18:43:14
+Midnight Cowboy ,6,What was the only X-rated film to win the Academy Award for Best Picture?  ,293,1.154,72,528519.5,q,S,4848.0,535060.0,HRV,HRV_0219,2022-11-30 18:43:14
+Australia,2,"""Welcome Stranger,"" the largest nugget of gold discovered, weighed 158 pounds and was discovered in what country?",5,0.89,73,535060.0,q,S,6321.100000143051,542783.9000000954,HRV,HRV_0219,2022-11-30 18:43:14
+"Gail Borden, Jr. ",6,Who invented condensed milk in 1856? ,414,0.786,74,542783.9000000954,q,S,3624.2000000476837,547724.4000000954,HRV,HRV_0219,2022-11-30 18:43:14
+Catapult ,1,What artillery weapon was launched upon the world in 400 B.C.?  ,140,0.52,75,547724.5,p,K,5913.900000095367,554668.4000000954,HRV,HRV_0219,2022-11-30 18:43:14
+Social Security,4,Ida May Fuller was the first U.S. citizen to receive a check for what?,46,1.985,76,554668.5,q,S,4868.900000095367,562052.0,HRV,HRV_0219,2022-11-30 18:43:14
+Jamaica Bay,6,"What lagoon south of Queens, New York, is named for a local Indian tribe and has nothing to do Caribbean?",226,1.791,77,562052.0,q,S,5315.600000143051,569683.4000000954,HRV,HRV_0219,2022-11-30 18:43:14
+Black,2,What color lipstick did silent movie stars wear?  ,151,1.498,78,569683.4000000954,q,S,4143.399999856949,575852.7999999523,HRV,HRV_0219,2022-11-30 18:43:14
+Jim Lovell,1,Alan Shepard was scheduled to command the ill-fated Apollo 13 before switching missions with what astronaut?,18,0.936,79,575852.7999999523,q,S,7212.600000143051,584539.9000000954,HRV,HRV_0219,2022-11-30 18:43:14
+The Hindenburg explosion,7,"What event inspired Herbert Morrison's famous quote ""Oh, the humanity!""?",174,1.869,80,584539.9000000954,p,K,5832.599999904633,592766.9000000954,HRV,HRV_0219,2022-11-30 18:43:14
+Coca-Cola,3,"""Project Kansas"" was the name for the top secret 1985 attempt to revamp what product?",416,0.755,81,592766.9000000954,q,S,8338.099999904633,602384.7999999523,HRV,HRV_0219,2022-11-30 18:43:14

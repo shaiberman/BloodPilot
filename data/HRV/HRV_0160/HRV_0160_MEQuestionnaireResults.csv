@@ -1,0 +1,29 @@
+QuestionNum,Question,Answer,exp,subjectId,date
+1,I eat so quickly that I don't taste what I'm eating,Never/Rarely,HRV,HRV_0160,2022-11-30 18:28:00
+2,"When I eat at ""all you can eat"" buffets, I tend to overeat.",Never/Rarely,HRV,HRV_0160,2022-11-30 18:28:00
+3,"At a a party where there is a lot of good food, I notice when it makes me want to eat more food than I should. ",Sometimes,HRV,HRV_0160,2022-11-30 18:28:00
+4,I recognize when food advertisements make me want to eat. ,Never/Rarely,HRV,HRV_0160,2022-11-30 18:28:00
+5,"When a restaurant portion is too large, I stop eating when I'm full.",Usually/Always,HRV,HRV_0160,2022-11-30 18:28:00
+6,My thoughts tend to wander while I'm eating. ,Never/Rarely,HRV,HRV_0160,2022-11-30 18:28:00
+7,"When I'm eating one of my favorite foods, I don't recognize when I've had enough.  ",Usually/Always,HRV,HRV_0160,2022-11-30 18:28:00
+8,I notice when just going into a movie theater makes me want to eat candy or popcorn. ,Sometimes,HRV,HRV_0160,2022-11-30 18:28:00
+9,"If it doesn't cost much more, I get the larger size food or drink regardless of hungry I feel.",often,HRV,HRV_0160,2022-11-30 18:28:00
+10,I notice when there are subtle flavors in the foods I eat. ,often,HRV,HRV_0160,2022-11-30 18:28:00
+11,"If there are leftovers that I like, I take a second helping eventhough I'm full. ",Sometimes,HRV,HRV_0160,2022-11-30 18:28:00
+12,"When eating a pleasant meal, I notice if it makes me feel relaxed.",often,HRV,HRV_0160,2022-11-30 18:28:00
+13,I snack without noticing that I am eating. ,Never/Rarely,HRV,HRV_0160,2022-11-30 18:28:00
+14,"When I eat a big meal, I notice if it makes me feel heavy or sluggish. ",Usually/Always,HRV,HRV_0160,2022-11-30 18:28:00
+15,I stop eating when I'm full even when eating something I love.,Usually/Always,HRV,HRV_0160,2022-11-30 18:28:00
+16,I appreciate the way my food looks on my plate.,often,HRV,HRV_0160,2022-11-30 18:28:00
+17,"When I'm feeling stressed at work, I'll go find something to eat.",Never/Rarely,HRV,HRV_0160,2022-11-30 18:28:00
+18,"If there's good food at a party, I'll continue eating even after I'm full.  ",Sometimes,HRV,HRV_0160,2022-11-30 18:28:00
+19,"When I'm sad, I eat to feel better. ",Never/Rarely,HRV,HRV_0160,2022-11-30 18:28:00
+20,I notice when foods and drinks are too sweet. ,Usually/Always,HRV,HRV_0160,2022-11-30 18:28:00
+21,Before I eat I take a moment to appreciate the colors and smells of my food.,often,HRV,HRV_0160,2022-11-30 18:28:00
+22,I taste every bite of food that I eat.,Usually/Always,HRV,HRV_0160,2022-11-30 18:28:00
+23,I recognize when I'm eating and not hungry. ,I never eat when I'm not hungry,HRV,HRV_0160,2022-11-30 18:28:00
+24,I notice when I'm eating from a dish of candy just because it's there.,Usually/Always,HRV,HRV_0160,2022-11-30 18:28:00
+25,"When I'm at a restaurant, I can tell when the portion I've been served is too large for me.",Usually/Always,HRV,HRV_0160,2022-11-30 18:28:00
+26,I notice when the food I eat affects my emotional state.,often,HRV,HRV_0160,2022-11-30 18:28:00
+27,"I have trouble not eating ice cream, cookies, or chips if they're around the house. ",Never/Rarely,HRV,HRV_0160,2022-11-30 18:28:00
+28,I think about things I need to do while I'm eating. ,often,HRV,HRV_0160,2022-11-30 18:28:00

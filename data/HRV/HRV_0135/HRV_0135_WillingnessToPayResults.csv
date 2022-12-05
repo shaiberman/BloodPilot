@@ -1,0 +1,81 @@
+Answer,C_Pay,Question,QuestionNum,jitter,C_Trial,C_QPresent,C_TrialEnd,rsp,C_SWK,C_SWK_rt,C_AnswerPresent,C_WorthPresent,C_Worth,C_Worth_rt,exp,subjectId,date
+On a Jell-O box,7,"Where would you see the consumer warning ""Do not use fresh or frozen pineapple, kiwi, ginger-root, papaya, figs, or guava""?",411,1.097,0,179446,188972,,,,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+The Beatles' Rain ,5,What was the first rock song ever to feature hidden messages in the form of back-masked vocals?  ,284,0.909,1,188972,193345,q,S,2943.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Cell,5,Robert Hooke coined what scientific term after looking at a piece of cork under a microscope?,81,0.853,2,193345,198158,q,S,3451.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+"A peanut is a legume, not a nut",7,What type of food is a peanut?,447,1.691,3,198158,201978,q,S,1609.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+All in the Family ,6,"What's the only TV show to top the Nielsen ratings five seasons in a row, from 1972 to 1976?  ",311,0.711,4,201978,214942,t,W,1887.0,206416.0,210432.0,,,HRV,HRV_0135,2022-11-30 18:01:42
+The paper clip,4,"""Gem"" is the trade name for the most common, three-loop design of what?",4,0.921,5,214942,225639,t,W,2194.0,219654.0,223665.0,5,541.0,HRV,HRV_0135,2022-11-30 18:01:42
+Canadian Oil,3,What is canola an abbreviation for?,436,1.453,6,225639,236654,t,W,1743.0,229887.0,233903.0,5,773.0,HRV,HRV_0135,2022-11-30 18:01:42
+Yellow,2,What color is insect blood? ,150,1.419,7,236654,247461,t,W,1662.0,240822.0,244853.0,5,672.0,HRV,HRV_0135,2022-11-30 18:01:42
+Ohio,3,Which is the only U.S. state that has a pennant-shaped flag instead of a rectangular one?  ,345,0.891,8,247461,258151,t,W,1914.0,251880.0,255889.0,5,858.0,HRV,HRV_0135,2022-11-30 18:01:42
+The La Brea tar pits ,2,"A California Chumash Indian woman, who appears to have been killed by a blow to the head 9,000 years ago, is the only human ever to be found where?",7,1.366,9,258151,270416,t,W,2764.0,263433.0,267441.0,5,1094.0,HRV,HRV_0135,2022-11-30 18:01:42
+Sapphire,7,What type of stone is referred to as the Star of India?  ,270,1.992,10,270416,282007,t,W,1590.0,274545.0,278558.0,5,935.0,HRV,HRV_0135,2022-11-30 18:01:42
+Mushrooms which have been exposed to light,2,What is the only non-animal natural source of vitamin D?,459,1.616,11,282007,293354,t,W,2107.0,286638.0,290641.0,5,556.0,HRV,HRV_0135,2022-11-30 18:01:42
+Japan,2,Where is the longest suspension bridge? ,319,1.231,12,293354,304055,t,W,1793.0,297655.0,301665.0,5,652.0,HRV,HRV_0135,2022-11-30 18:01:42
+James Buchanan ,7,Who was the only U.S. president never to be married?,383,0.783,13,304055,314359,t,W,1811.0,308376.0,312385.0,5,671.0,HRV,HRV_0135,2022-11-30 18:01:42
+Martin Luther King Jr. ,7,What civil rights leader did Dorothy Parker leave the bulk of her estate to?,149,1.99,14,314359,326103,t,W,2135.0,319015.0,323026.0,5,581.0,HRV,HRV_0135,2022-11-30 18:01:42
+Pride and Prejudice,4,"""An Assembly Such as This"" was a retelling of what famous literary work from a different character's point of view?",1,1.582,15,326103,341886,t,W,6515.0,335148.0,339153.0,5,642.0,HRV,HRV_0135,2022-11-30 18:01:42
+Westminster Kennel Club dog show ,6,What is the second oldest continuously held American sporting event?  ,214,1.473,16,341886,353134,t,W,1750.0,346147.0,350167.0,5,949.0,HRV,HRV_0135,2022-11-30 18:01:42
+Anne Hathaway,5,What was the name of William Shakespeare's wife?  ,290,0.853,17,353134,356150,q,S,1642.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Silver,7,What metal was found in Nevada's famed Comstock Lode?  ,230,1.729,18,356150,359951,q,S,1534.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+The crocodile,2,The Egyptian plover is a bird best known for its symbiotic relationship with what host animal?,95,1.076,19,359951,363158,q,S,1617.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Francisco Goya,6,"After a fever took his hearing, who painted his bleak ""Black Paintings"" in a house called Quinta del Sordo, Spanish for ""House of the Deaf Man""?",15,0.908,20,363158,366291,q,S,1688.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Medicine,6,What industry uses 20% of China's harvested plants?  ,188,0.833,21,366291,369148,q,S,1511.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Teeth,4,"One in every 2,000 babies is born with what? ",77,1.543,22,369148,372855,q,S,1640.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Ivory Coast's ,4,"The world's largest church is Our Lady of Peace Basilica in Yamoussoukro, what nation's capital?",111,0.597,23,372855,375602,q,S,1630.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Saffron,7,What is the most expensive spice (by weight) in the world?,431,0.664,24,375602,378366,q,S,1594.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+A Spoonful of Sugar ,6,What classic Disney song was inspired by lyricist Robert Sherman's fiver-year old son receiving the Sabin polio vaccine at school?,420,0.917,25,378366,383704,q,S,3860.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Brine Shrimp ,3,"What kind of animal is Artemia Salina, the ""sea monkey"" of novelty pet ad fame? ",222,1.934,26,383705,387671,q,S,1521.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Monrovia,5,What African capital city is named after a U.S. president? ,128,1.913,27,387671,391751,q,S,1647.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+cooking,1,"If you suffer from Mageirocophobia, what are you scared of?",438,0.699,28,391751,394471,q,S,1515.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+OutKast,2,Who was sued in 1999 by Rosa Parks after they used her name to title a hit song?  ,379,1.951,29,394471,398527,q,S,1595.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+The Super Bowl ,2,What rubber Wham-O toy inspired the name of one of the world's largest sporting events? ,255,1.423,30,398527,402095,q,S,1638.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Italy ,7,What country borders both of the world's only two nations with square flags? ,157,1.022,31,402095,405272,q,S,1652.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Patch Addams ,6,"What doctor, whose life was fictionalized in a 1998 film, founded the Gesundheit! Institute and named his oldest son ""Atomic Zagnut""?",166,1.866,32,405272,409823,q,S,2171.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Eric the Red,4,"According to Norse sagas, who gave Greenland its misleading name in order to attract settlers? ",12,1.48,33,409823,413454,q,S,1620.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+PayPal,2,YouTube.com is the brainchild of three former employees of what other major website? ,396,1.337,34,413454,417018,q,S,1661.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+"Gaslight CafÃ©, Greenwich Village",4,Where did Bob Dylan first play in public? ,314,0.674,35,417018,420879,q,S,2678.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Butt,5,The adjective callipygian refers to someone who has a beautiful what? ,88,1.097,36,420879,424884,q,S,2381.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+pastry,5,Choux and filo are two types of what food product?,446,1.93,37,424884,429351,q,S,2022.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+The crust and the mantle,5,"The ""Mohorovicic discontinuity"" divides what two outer layers of the earth?",87,1.863,38,429351,433350,q,S,1634.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+On Christ's crucifix ,6,"Where did the abbreviation ""INRI"" traditionally appear? ",315,1.057,39,433350,436479,q,S,1556.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+at least 97%,7,How much caffeine needs to be taken out of coffee for it to be described as decaffeinated?,427,1.777,40,436479,440381,q,S,1605.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Speed of wind,6,What does an anemometer measure? ,168,0.928,41,440381,444543,q,S,2726.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Holy Roman Emperor Henry IV ,7,Who did Pope Gregory VII leave in the snow outside of his castle gates for three full days?  ,365,1.486,42,444543,448198,q,S,1663.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Bright red,4,Vitamin A is largely available in natural food sources with which colour?,448,0.577,43,448198,451260,q,S,1958.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+The Atlas,4,"The U.S.'s first successful ICBM was what rocket named for a Titan of Greek myth, later used to launch John Glenn into orbit?",107,1.574,44,451260,454886,q,S,1546.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Mouse,1,What is the most common mammal in the U.S.? ,205,0.936,45,454886,457899,q,S,1541.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Juvenile deliquent,2,What did popular author J.D. Salinger reveal the first two intials in his name to stand for?  ,163,0.928,46,457899,460951,q,S,1595.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Mickey Finn,5,What owner-bartender of Chicago's Lone Star Saloon was famous for his drug-laced drinks? ,241,1.925,47,460951,465055,q,S,1588.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Belgium,1,Where were French fries invented?,437,1.456,48,465055,468722,q,S,1685.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Gabriele Falloppio ,2,What Italian physician was the first to describe the way the ovaries connect to the uterus in humans?,217,1.554,49,468722,473431,q,S,2643.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+The Millenium Falcon ,7,"What could be built by the largest Lego set ever sold, a 5195-piece monstrosity? ",156,1.737,50,473431,478738,q,S,3065.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Lolita by Vladimir Nabokov,7,"""Don't Stand So Close to Me"" by the Police was inspired by what literary work?",3,0.613,51,478738,483021,q,S,3149.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Ripe cranerries bounce when dropped on the ground,4,How do farmers test whether cranberries are ripe?,452,0.739,52,483021,485916,q,S,1632.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Ciabatta,1,"What sandwich bread, because of its shape, takes its name from the Italian for ""carpet slipper""? ",406,1.408,53,485916,490086,q,S,2259.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+potein,7,"What nutrient comes from meat, eggs, and fish?",433,0.785,54,490086,493430,q,S,2051.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Kiwi,3,"Which bird species has survived more than 70 million years, despite the fact that it lays one egg a year and is nearly blind?",331,1.8,55,493430,497383,q,S,1646.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Coca-Cola,1,"""Project Kansas"" was the name for the top secret 1985 attempt to revamp what product?",416,1.853,56,497383,501375,q,S,1624.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Haricot beans,7,Baked beans are made from what type of bean?,443,1.518,57,501375,505007,q,S,1587.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Texas,1,"In what state was the U.S.'s first ""Adopt-a-Highway"" program started?",67,1.742,58,505007,509334,q,S,2059.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Lava lamp ,6,What was first made by suspending paraffin in a solution of water and antifreeze? ,276,1.265,59,509334,512755,q,S,1627.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+The nock,6,What slot on the back of an arrow's shaft keeps it on the bowstring? ,259,1.722,60,512755,516569,q,S,1549.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Violin,3,What instrument was invented to sound like a human singing? ,189,0.95,61,516569,519639,q,S,1611.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+The Oxford English Dictionary,6,"W.C. Minor, a murderer, spent the last decades of his life in an insane asylum writing hundreds of entries for what reference work? ",121,1.806,62,519639,524127,q,S,2167.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Radar,2,What was developed thanks to Christian Hulsmeyer's 1904 invention of the telemobiloscope?  ,275,0.501,63,524127,528318,q,S,3179.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Dragees,2,"What are the sugared almonds, traditionally thrown over the bride and groom at a wedding, called?",430,1.604,64,528318,532026,q,S,1518.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Eddie Van Halen,1,"Who performs the guest guitar solo on Michael Jackson's ""Beat It""?  ",371,1.67,65,532026,535748,q,S,1526.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Pancreas,5,In what organ of the body would you find the islets of Langerhans and the duct of Wirsung? ,66,1.47,66,535748,539303,q,S,1578.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+citrus fruit (scurvy is caused by a lack of vitamin c),3,Sailors used to suffer from a horrible illness called scurvy. Which food prevents scurvy?,441,0.992,67,539303,542382,q,S,1573.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Bacon,1,"In Britain, what kind of meat comes in rashers?",397,1.673,68,542382,546191,q,S,1625.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+The popsicle,2,Which popular treat was invented by an 11-year-old in California? ,413,1.956,69,546191,550366,q,S,1684.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+"the white flesh that houses the seeds, known as the placenta",1,What is the hottest part of a chili?,432,1.714,70,550366,554214,q,S,1611.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Mae West,1,"Because her name became a slang term for a life preserver, who is the only actress whose name is an entry in Merriam-Webster's?",26,1.965,71,554214,558807,q,S,2108.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Peanuts ,2,What snack food is an ingredient in the explosive dynamite?  ,408,1.859,72,558807,562804,q,S,1605.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Betty Rubble,5,Which core Flintstones cast member was absent from Flintstone vitamins until 1996? ,337,1.206,73,562804,566430,q,S,1893.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Russia,1,Which country has the most public libraries?  ,339,0.981,74,566430,571616,q,S,3696.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Pepper and Mustard,3,What are the top two most popular spices in the world?,422,1.988,75,571616,576058,q,S,1930.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Jose Castro ,2,"What Mexican general, who governed California for four months in 1835, would probably be surprised by how he's remembered in San Francisco today?",231,0.69,76,576058,585585,,,,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Phosphorus,3,"What element did alchemist Hennig Brand discover in 1669 when, boiling his own urine in the hopes of making gold, he observed glowing fumes?",169,1.74,77,585585,589367,q,S,1526.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+The Guinness Book of World Records,2,What did Ross and Norris McWhirter compile as a promotional giveaway in 1955? ,164,1.828,78,589367,593247,q,S,1540.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42
+Draw,1,What does a screever do on a sidewalk? ,167,1.781,79,593247,600718,q,S,5174.0,,,,,HRV,HRV_0135,2022-11-30 18:01:42

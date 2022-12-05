@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,245,"What plant takes its name for the Chinese words for ""man root""? ",Ginseng ,Know,NaN,HRV,HRV_0161,2022-11-30 18:10:03
+1.0,327,Which animal's eyes are bigger than its brain?   ,Ostrich,96,85,HRV,HRV_0161,2022-11-30 18:10:03
+2.0,84,"Sodium azide, a highly toxic chemical, is best-known for being used to develop what lifesaving devices?",Air bags,100,99,HRV,HRV_0161,2022-11-30 18:10:03
+3.0,307,What's the only country outside Africa where lions still live in the wild?  ,India,87,88,HRV,HRV_0161,2022-11-30 18:10:03
+4.0,2,"""Dear Abby"" first appeared in a newspaper of what city?",San Fancisco,Know,NaN,HRV,HRV_0161,2022-11-30 18:10:03
+5.0,405,What popular drink was first marketed as a brain tonic?,Coca-cola,89,94,HRV,HRV_0161,2022-11-30 18:10:03
+6.0,229,"What Margate City, NJ, housing area has been misspelled on the Monopoly board for almost 80 years?",Marven (Marvin) Gardens,95,90,HRV,HRV_0161,2022-11-30 18:10:03
+7.0,273,"What US state advertised ""The Greatest Snow on Earth"" on its license plates? ",Utah,96,93,HRV,HRV_0161,2022-11-30 18:10:03
+8.0,443,Baked beans are made from what type of bean?,Haricot beans,Know,NaN,HRV,HRV_0161,2022-11-30 18:10:03
+9.0,444,What item of food holds the world record for being the most stolen item of food in the world?,cheese ,99,96,HRV,HRV_0161,2022-11-30 18:10:03

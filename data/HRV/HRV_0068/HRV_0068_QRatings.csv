@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,285,What was the first song ever performed in outer space? ,Happy Birthday,24,49,HRV,HRV_0068,2022-11-30 17:56:59
+1.0,284,What was the first rock song ever to feature hidden messages in the form of back-masked vocals?  ,The Beatles' Rain ,25,24,HRV,HRV_0068,2022-11-30 17:56:59
+2.0,246,"What president has three ""A's"" in his first name, each of which has a different sound? ",Abraham Lincoln ,2,24,HRV,HRV_0068,2022-11-30 17:56:59
+3.0,458,What food is most beneficial for your gut bacteria?,Fiber is the gut bacteria's preferred fuel source. ,50,74,HRV,HRV_0068,2022-11-30 17:56:59
+4.0,348,"Which museum hung Matisse's ""Le Bateau"" upsidedown for more than a month, until an art student noticed the error?",Museum of Modern Art in NYC ,24,24,HRV,HRV_0068,2022-11-30 17:56:59
+5.0,202,What is measured in millibars? ,Pressure,1,1,HRV,HRV_0068,2022-11-30 17:56:59
+6.0,417,"Each year, approximately 125 people die of what? ",Choking on food,49,50,HRV,HRV_0068,2022-11-30 17:56:59
+7.0,2,"""Dear Abby"" first appeared in a newspaper of what city?",San Fancisco,24,12,HRV,HRV_0068,2022-11-30 17:56:59
+8.0,36,Eleven U.S. presidents have been what before being elected?,Generals,25,16,HRV,HRV_0068,2022-11-30 17:56:59
+9.0,418,Tasseomancy is a method of fortune telling that primarily uses what? ,Tea leaves,24,30,HRV,HRV_0068,2022-11-30 17:56:59

@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,428,"If something is described as rotisserie, what has it been cooked on?",a spit,0,49,HRV,HRV_0323,2022-12-01 01:01:57
+1.0,112,"The world's smallest park, measuring two feet in diameter, is located in what U.S. state? ",Oregon ,0,49,HRV,HRV_0323,2022-12-01 01:01:57
+2.0,203,What is the largest creature without a backbone? ,Giant squid,0,49,HRV,HRV_0323,2022-12-01 01:01:57
+3.0,388,"Whose first book was ""Down and Out in Paris and London"", about his year among the poverty-stricken underclass of those cities?",George Orwell ,49,0,HRV,HRV_0323,2022-12-01 01:01:57
+4.0,201,What is measured in becquerels? ,Radioactivity,0,49,HRV,HRV_0323,2022-12-01 01:01:57
+5.0,353,Which species of snake gives birth to its young instead of laying eggs?  ,Anaconda,1,49,HRV,HRV_0323,2022-12-01 01:01:57
+6.0,310,What's the only stock from the original Dow Jones Industrial Average that's still used in computing the index?,General Electric ,0,49,HRV,HRV_0323,2022-12-01 01:01:57
+7.0,394,"With over 5.3 million sold since 1959, what's by far the most successful British car of all time?",The Mini Cooper,1,49,HRV,HRV_0323,2022-12-01 01:01:57
+8.0,413,Which popular treat was invented by an 11-year-old in California? ,The popsicle,1,49,HRV,HRV_0323,2022-12-01 01:01:57
+9.0,423,What percentage of peanuts is found in a standard jar of peanut butter?,Every jar of peanut butter must be at least 90% peanuts,49,49,HRV,HRV_0323,2022-12-01 01:01:57

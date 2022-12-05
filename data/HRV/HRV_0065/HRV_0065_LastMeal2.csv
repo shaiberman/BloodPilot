@@ -1,0 +1,8 @@
+QuestionNum,Question,Answer,exp,subjectId,date
+1,Have you eaten anything since our last meal? ,Not at all,HRV,HRV_0065,2022-11-30 18:06:20
+2,How often do you work out?,Rarely,HRV,HRV_0065,2022-11-30 18:06:20
+3,How would you best describe your current diet?,I do not pay attention to what I eat,HRV,HRV_0065,2022-11-30 18:06:20
+4,"We want to check that you are paying attention, please select ""Moderately"" as your answer.",Moderately,HRV,HRV_0065,2022-11-30 18:06:20
+5,How tired do you feel?,Not at all,HRV,HRV_0065,2022-11-30 18:06:20
+6,How strong is your desire to eat right now?,Very,HRV,HRV_0065,2022-11-30 18:06:20
+7,How much do you think you could eat right now?,A full meal,HRV,HRV_0065,2022-11-30 18:06:20

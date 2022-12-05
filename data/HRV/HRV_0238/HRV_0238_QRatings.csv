@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,285,What was the first song ever performed in outer space? ,Happy Birthday,81,90,HRV,HRV_0238,2022-11-30 19:15:34
+1.0,309,What's the only letter that doesn't appear in the periodic table of elements?,J,69,76,HRV,HRV_0238,2022-11-30 19:15:34
+2.0,4,"""Gem"" is the trade name for the most common, three-loop design of what?",The paper clip,35,28,HRV,HRV_0238,2022-11-30 19:15:34
+3.0,398,Pet parrots can eat most human foods except chocolate and which pitted food?  ,Avocado,15,28,HRV,HRV_0238,2022-11-30 19:15:34
+4.0,131,What animal can live up to a week without its head?,Cockroach,36,13,HRV,HRV_0238,2022-11-30 19:15:34
+5.0,403,"What grape, used to make a popular California wine, is called Primitivo in Europe?  ",Zinfindel,18,36,HRV,HRV_0238,2022-11-30 19:15:34
+6.0,344,Which is the only cat that cannot retract its claws? ,Cheetah,36,72,HRV,HRV_0238,2022-11-30 19:15:34
+7.0,429,"If you ordered an Omelet Arnold Bennett, what fish would you find in it?",Haddock,42,21,HRV,HRV_0238,2022-11-30 19:15:34
+8.0,17,"After Toyota's Corolla, what coupe introduced in 1972 is the second oldest Japanese car model still on the market?",Honda's Civic,63,39,HRV,HRV_0238,2022-11-30 19:15:34
+9.0,380,Who was the first woman film director to have a film take in more than $100 million at the box office? ,Penny Marshall,60,71,HRV,HRV_0238,2022-11-30 19:15:34

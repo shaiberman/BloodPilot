@@ -1,0 +1,11 @@
+QuestionNum,Question,Answer,exp,subjectId,date
+1,How old are you?,31,HRV,HRV_0052,2022-11-30 18:31:37
+2,How fluent are you in reading and understanding English?,Extremely,HRV,HRV_0052,2022-11-30 18:31:37
+3,Is English your native language?,Yes,HRV,HRV_0052,2022-11-30 18:31:37
+4,What state do you live in?,TX,HRV,HRV_0052,2022-11-30 18:31:37
+5,What is your sex?,Male,HRV,HRV_0052,2022-11-30 18:31:37
+6,What is your race/ethnicity?,White,HRV,HRV_0052,2022-11-30 18:31:37
+7,"We want to check that you are paying attention, please select ""Moderately"" as your answer.",Moderately,HRV,HRV_0052,2022-11-30 18:31:37
+8,"What is the highest degree or level of school that you have completed? (If you are currently enrolled in school, please indicate the highest degree you have received) ",Bachelor's Degree,HRV,HRV_0052,2022-11-30 18:31:37
+9,What is your household income?,"$50,000 to $74,999",HRV,HRV_0052,2022-11-30 18:31:37
+10,Are you vegetarian or vegan?,No,HRV,HRV_0052,2022-11-30 18:31:37

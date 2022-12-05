@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,144,"What began as a ligature of the letters ""e"" and ""t""?",Ampersand (&),8,15,HRV,HRV_0005,2022-11-30 17:36:21
+1.0,354,Which state has the zip code 12345?,New York,21,99,HRV,HRV_0005,2022-11-30 17:36:21
+2.0,436,What is canola an abbreviation for?,Canadian Oil,24,90,HRV,HRV_0005,2022-11-30 17:36:21
+3.0,429,"If you ordered an Omelet Arnold Bennett, what fish would you find in it?",Haddock,8,65,HRV,HRV_0005,2022-11-30 17:36:21
+4.0,267,What transmits the disease typanosomiasis to humans and cattle? ,Tse-tse fly,24,88,HRV,HRV_0005,2022-11-30 17:36:21
+5.0,461,Cooking which food requires over two years of training?,"Puffer fish, if they are prepared incorrectly thheir poison could kill the eater. ",100,98,HRV,HRV_0005,2022-11-30 17:36:21
+6.0,47,In 1568 the Catholic Church sentenced the entire population of which nation to death as heretics?,The Netherlands,89,88,HRV,HRV_0005,2022-11-30 17:36:21
+7.0,382,Who was the only person to be nearby at three different presidential assassinations? ,Robert Lincoln ,99,94,HRV,HRV_0005,2022-11-30 17:36:21
+8.0,179,"What forms the only part of the Kansas border, a seventy-five mile stretch, that's not drawn with a straight edge?",The Missouri River ,Know,NaN,HRV,HRV_0005,2022-11-30 17:36:21
+9.0,255,What rubber Wham-O toy inspired the name of one of the world's largest sporting events? ,The Super Bowl ,Know,NaN,HRV,HRV_0005,2022-11-30 17:36:21

@@ -1,0 +1,11 @@
+trialN,QuestionNum,Question,Answer,QuestionRating,AnswerRating,exp,subjectId,date
+0.0,297,"What word comes to us from the Greek for ""thick-skinned""?  ",Pachyderm,33,49,HRV,HRV_0246,2022-11-30 19:31:05
+1.0,439,Some bands share a name with a food. Which band named after a foodstuff has sold the most records?,"the Red Hot Chili Peppers, followed closely by Meatloaf",66,75,HRV,HRV_0246,2022-11-30 19:31:05
+2.0,34,"During which war was ""The African Queen"" set?",World War I,8,23,HRV,HRV_0246,2022-11-30 19:31:05
+3.0,126,"What 20th-century conflict was dubbed the ""forgotten war"" despite over 50,000 U.S. deaths?",The Korean War,87,77,HRV,HRV_0246,2022-11-30 19:31:05
+4.0,424,What is used to make hummus?,chickpeas,Know,NaN,HRV,HRV_0246,2022-11-30 19:31:05
+5.0,402,"What food, still edible, was found by archaeologists in the tombs of Egyptian pharaohs? ",Honey,61,89,HRV,HRV_0246,2022-11-30 19:31:05
+6.0,69,In which country were the Hanging Gardens of Babylon located?,Iraq,8,7,HRV,HRV_0246,2022-11-30 19:31:05
+7.0,37,"Europe's only free-range monkeys are the Barbary apes, which live where?",Gibralter,63,20,HRV,HRV_0246,2022-11-30 19:31:05
+8.0,22,"Arno Penzias and Robert Wilson shared a Nobel Prize for accidentally discovering ""CMB,"" leftover radiation from what?",The Big Bang,8,7,HRV,HRV_0246,2022-11-30 19:31:05
+9.0,48,"In 1802, John Beckley became the librarian of what collection containing 740 books at the time?",Library of Congress,25,9,HRV,HRV_0246,2022-11-30 19:31:05

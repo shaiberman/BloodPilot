@@ -1,0 +1,24 @@
+QuestionNum,Question,Answer,exp,subjectId,date
+1,"I try to avoid certain foods high in fat, carbohydrates, or calories",neutral,HRV,HRV_0055,2022-11-30 19:47:18
+2,"I find myself eating when I'm feeling emotional (e.g., anxious, depressed, sad), even when I'm not physically hungry",agree,HRV,HRV_0055,2022-11-30 19:47:18
+3,"If I am craving a certain food, I allow myself to have it. ",agree,HRV,HRV_0055,2022-11-30 19:47:18
+4,I get mad at myself for eating something unhealthy.,agree,HRV,HRV_0055,2022-11-30 19:47:18
+5,"I find myself eating when I'm lonely, even when I'm not physically hungry",disagree,HRV,HRV_0055,2022-11-30 19:47:18
+6,I trust my body to tell me when to eat,strongly agree,HRV,HRV_0055,2022-11-30 19:47:18
+7,I trust my body to tell me what to eat,strongly agree,HRV,HRV_0055,2022-11-30 19:47:18
+8,I trust my body to tell me how much to eat. ,strongly agree,HRV,HRV_0055,2022-11-30 19:47:18
+9,I have forbidden foods that I don't allow myself to eat. ,neutral,HRV,HRV_0055,2022-11-30 19:47:18
+10,I use food to help me soothe my negative emotions.,agree,HRV,HRV_0055,2022-11-30 19:47:18
+11,"I find myself eating when I am stressed out, even when I'm not physically hungry.",agree,HRV,HRV_0055,2022-11-30 19:47:18
+12,"I am able to cope with my negative emotions (e.g., anxiety, sadness) without turning to food for comfort. ",agree,HRV,HRV_0055,2022-11-30 19:47:18
+13,"When I am bored, I do NOT eat just for something to do.",agree,HRV,HRV_0055,2022-11-30 19:47:18
+14,"When I am lonely, I do NOT turn to food for comfort. ",neutral,HRV,HRV_0055,2022-11-30 19:47:18
+15,I find other ways to cope with stress and anxiety than by eating.,agree,HRV,HRV_0055,2022-11-30 19:47:18
+16,I allow myself to eat what food I desire at the moment. ,agree,HRV,HRV_0055,2022-11-30 19:47:18
+17,"I do NOT follow eating rules or dieting plans that dictate what, when and/or how much to eat. ",neutral,HRV,HRV_0055,2022-11-30 19:47:18
+18,"Most of the time, I desire to eat nutritious food. ",disagree,HRV,HRV_0055,2022-11-30 19:47:18
+19,I mostly eat foods that make my body perform efficiently (well).,disagree,HRV,HRV_0055,2022-11-30 19:47:18
+20,I mostly eat foods that give my body energy and stamina.,disagree,HRV,HRV_0055,2022-11-30 19:47:18
+21,I rely on my hunger signals to tell me when to eat.,agree,HRV,HRV_0055,2022-11-30 19:47:18
+22,I rely on my fullness (satiety) signals to tell me when to stop eating.,agree,HRV,HRV_0055,2022-11-30 19:47:18
+23,I trust my body to tell me when to stop eating. ,agree,HRV,HRV_0055,2022-11-30 19:47:18
