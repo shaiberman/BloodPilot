@@ -36,7 +36,12 @@ expTaskOrders = {
                    'rdcolor_instructions', 'rdcolor_task', 'color_questionnaire',
                    'questionnaire_instructions',  'ratehunger']}
 }
-repeatFoodRating = {'HRV': True}
+
+day1file = _thisDir + '/data/' + expId + '/' + expId + '_subject_worker_ids_day1.csv'
+if not os.path.exists(day1file):  #  day 1  - repeat food rating
+    repeatFoodRating = {'HRV': True}
+else:                             #  day 2  - repeat food rating
+    repeatFoodRating = {'HRV': False}
 
 
 @tasks.route("/", methods=["GET", "POST"])
