@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/static/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Study details</title>
+
+	 <!-- *** JSPSYCH *** -->
+	<script src=/static/dmstudies/jspsych.js></script>
+	<script src=/static/dmstudies/jspsych-wl-check-fps_w.js></script>
+</head>
+<body><!--  style="margin:40% 30%;">-->
+<script src="/static/dmstudies/fps-check.js"></script>
+<br>
+
+<p style="margin: 5% 10% 5% 15%">
+    In this study, you will be asked to repeat tasks on 2 separate days!
+	<br>
+	The second day will be slightly shorter - excluding 3 questionnaires.
+<br><br>
+	Importantly, the two days should be done in different hunger states.
+	<br>
+	Therefore, if today you accept and perform the HIT having eaten in the last 3 hours, we ask that when you do part 2 of this task you will do it before eating breakfast (or lunch in case you do not eat breakfast).
+	<br>
+	Alternatively, if you accept the HIT now and you haven't eaten in several hours, we ask that you do part 2 of this task not long after a meal.
+	<br><br>
+	Part 2 of this task will start  tomorrow, and will be available in the next few days.
+	<br><br>
+
+	Please do NOT accept this HIT if you are not willing or able to repeat the study in the following days.
+	<b></b>
+	Thank you for participating!
+</p>
+<center>
+	<form method="POST" style="padding: 0px;">
+	<p id="message" >
+	   Have you eaten a meal in the last 3-4 hours?
+
+		<select name="is_Fed" required>
+			<option selected disabled hidden value=''></option>
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</select>
+	</p>
+	<br>
+		<center><input type="submit" value="Submit" class="btn btn-default"></center>
+	<br>
+			</form>
+
+	</center>
+<!-- ***
+<center>
+	<form method="POST" id="button">
+		<input type="submit" value="Continue" class="btn btn-default">
+	</form>
+	</center>"""*** -->
+</body>
+
+</html>

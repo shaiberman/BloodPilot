@@ -7,13 +7,13 @@ n2 = 70
 
 _thisDir = os.path.dirname(os.path.abspath(__file__)) #.decode(sys.getfilesystemencoding())
 _parentDir = os.path.abspath(os.path.join(_thisDir, os.pardir))
-dataDir = _parentDir + '/data/'
+dataDir = 'C:/Users/shaib/Documents/hunger/Mturk2/data'
 sys.path.insert(0, os.path.join(_parentDir))
 
 from manage_subject_info import *
 from mturk_utils import *
 
-expId = 'KangaP'
+expId = 'HRV'
 
 if (len(sys.argv) < 3):
     print('usage: python pay_wtp_bonuses <testMode:True/False> <sandbox/live>')

@@ -14,7 +14,7 @@ sys.path.insert(0, os.path.join(_parentDir))
 from manage_subject_info import *
 from mturk_utils import *
 
-expId = 'KangaAI'
+expId = 'HRV'
 
 if (len(sys.argv) < 3):
     print('usage: python pay_wtp_bonuses <testMode:True/False> <sandbox/live>')

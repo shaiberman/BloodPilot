@@ -14,8 +14,19 @@ def store_subject_info(expId, workerId, tasksToComplete, assignmentId, hitId, tu
         os.makedirs(_thisDir + '/data/' + expId)
     # store subjectId and other relevant subject info, except workerId
     csvLocation = _thisDir + '/data/' + expId +'/' + expId + '_subject_assignment_info.csv'
+    day1file =  _thisDir + '/data/' + expId +'/' + expId + '_subject_worker_ids_day1.csv'
+    if os.path.exists(day1file):
+        newSubjectId = get_oldsubjectID(day1file, workerId)
+        day=2
+    else:
+        day=1
+
+    # first subject
+
     if not os.path.exists(csvLocation):
-        newSubjectId = expId + "_%04d" % (1,)
+        if not os.path.exists(day1file):
+            newSubjectId = expId + "_%04d" % (1,)
+
         currentTime = datetime.datetime.now()
         currentTime = currentTime.strftime("%Y-%m-%d %H:%M:%S")
         newSubject = {'subjectId':newSubjectId, 'assignmentId':assignmentId, 'hitId':hitId, 'turkSubmitTo':turkSubmitTo, 'timestamp':currentTime}
@@ -25,7 +36,8 @@ def store_subject_info(expId, workerId, tasksToComplete, assignmentId, hitId, tu
         df = pd.read_csv(csvLocation)
         df2 = pd.read_csv(_thisDir + '/data/' + expId +'/' + expId + '_subject_worker_ids.csv')
         nSubjects = len(df2.index)
-        newSubjectId = expId + "_%04d" % (nSubjects+1,)
+        if not os.path.exists(day1file):
+            newSubjectId = expId + "_%04d" % (nSubjects+1,)
         currentTime = datetime.datetime.now()
         currentTime = currentTime.strftime("%Y-%m-%d %H:%M:%S")
         newSubject = {'subjectId':newSubjectId, 'assignmentId':assignmentId, 'hitId':hitId, 'turkSubmitTo':turkSubmitTo, 'timestamp':currentTime}
@@ -36,7 +48,7 @@ def store_subject_info(expId, workerId, tasksToComplete, assignmentId, hitId, tu
 
     # store subjectId and workerId
     csvLocation = _thisDir + '/data/' + expId +'/' + expId + '_subject_worker_ids.csv'
-    newSubject = {'expId':expId, 'workerId':workerId, 'timestamp':currentTime}
+    newSubject = {'expId':expId,'subID':newSubjectId, 'workerId':workerId, 'timestamp':currentTime}
     if not os.path.exists(csvLocation):
         new_df = pd.DataFrame(data=newSubject, index=[0])
     else:
@@ -44,6 +56,14 @@ def store_subject_info(expId, workerId, tasksToComplete, assignmentId, hitId, tu
         df2 = pd.DataFrame(data=newSubject, index=[0])
         new_df = pd.concat([df,df2], axis=0)
     new_df.to_csv(csvLocation,index=False)
+
+    return day
+
+def get_oldsubjectID(day1file, workerId):
+    df = pd.read_csv(day1file)
+    subid = df.loc[df['workerId'] == workerId]['subID'].values
+    newSubjectId  = subid.tolist()[0]
+    return newSubjectId
 
 
 def get_timestamp(expId, workerId):

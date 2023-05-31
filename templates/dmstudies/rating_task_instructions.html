@@ -5,10 +5,24 @@
 <html>
 <br>
 <p>{{ instructions|safe }}</p>
+
+<body>
+<br>
+
+<p style="margin-left:15%; margin-right:15%">You will now start with a computer task about curiosity. In the first part of this task, you will be shown a series of trivia questions. You will be asked to rate how much you are curious about the answer to the question.
+    Please use the mouse to indicate how curious you are (1 = not curious, 100 = extremely curious).
+    The screen will look like this: </p>
+<center><img width="50%" src="{{ url_for('static', filename = 'dmstudies/kanga_rating_instructions.png') }}"></center>
+
+<p style="margin-left:15%; margin-right:15%">If you already know the answer to the question, press the 'know' button.
+In the next part of the task, you will have the opportunity to see the answer for these questions.
+Press 'Continue' to start the task.</p>
+
 <center>
 <form method="POST">
 	<input type="submit" value="Continue" class="btn btn-default">
 </form>
 </center>
 <br><br>
+  </body>
 </html>

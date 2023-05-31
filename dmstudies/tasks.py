@@ -21,16 +21,18 @@ expTasksToComplete = {}
 # o1 - food rating and choice -> curiosity (wtp) -> perceptual choice
 # o2 - curiosity (wtp) -> food rating and choice -> perceptual choice
 expTaskOrders = {
-    'HRV': {"o1": ['foodrating_demo_instructions', 'foodrating',
+    'HRV': {"o1": ['rating_task_instructions','Qrating_task',
+                   'full_instructions_wtp','comprehension_test_wtp',
+                   'main_task_instructions_wtp','task_wtp',
+                   'foodrating_demo_instructions', 'foodrating',
                    'foodchoicetask_demo_instructions', 'foodchoicetask',
-                   'full_instructions_wtp','comprehension_test_wtp', 'main_task_instructions_wtp','task_wtp',
-                   'rating_task_instructions','Qrating_task',
                    'rdcolor_instructions', 'rdcolor_task', 'color_questionnaire',
                    'questionnaire_instructions',  'ratehunger'],
-            "o2": ['full_instructions_wtp','comprehension_test_wtp', 'main_task_instructions_wtp','task_wtp',
-                   'rating_task_instructions','Qrating_task',
-                   'foodrating_demo_instructions','foodrating',
+            "o2": ['foodrating_demo_instructions','foodrating',
                    'foodchoicetask_demo_instructions', 'foodchoicetask',
+                   'rating_task_instructions','Qrating_task',
+                   'full_instructions_wtp','comprehension_test_wtp',
+                   'main_task_instructions_wtp', 'task_wtp',
                    'rdcolor_instructions', 'rdcolor_task', 'color_questionnaire',
                    'questionnaire_instructions',  'ratehunger']}
 }
@@ -47,6 +49,7 @@ def consent_form():
         if contains_necessary_args(request.args):
             # worker accepted HIT
             [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
+           # workerId = 'A27O7H19C0WQ7T'
             subjectId = get_subjectId(expId, workerId)
             if workerId_exists(expId, workerId) and (get_task_results_exists(subjectId, 'WTWCovidResults')):
                 return render_template('return_hit.html')
@@ -55,6 +58,7 @@ def consent_form():
         elif 'assignmentId' in request.args and request.args.get('assignmentId') == 'ASSIGNMENT_ID_NOT_AVAILABLE':
             # worker previewing HIT
             workerId = 'testWorker' + str(random.randint(1000, 10000))
+           # workerId = 'A27O7H19C0WQ7T'
             assignmentId = request.args.get('assignmentId')
             hitId = 'testHIT' + str(random.randint(10000, 100000))
             turkSubmitTo = 'www.calkins.psych.columbia.edu'
@@ -65,23 +69,29 @@ def consent_form():
         else:
             # in testing - accessed site through www.calkins.psych.columbia.edu
             workerId = 'testWorker' + str(random.randint(1000, 10000))
+#            workerId = 'A27O7H19C0WQ7T'
             assignmentId = 'testAssignment' + str(random.randint(10000, 100000))
             hitId = 'testHIT' + str(random.randint(10000, 100000))
             turkSubmitTo = 'www.calkins.psych.columbia.edu'
             live = False
             store_subject_info(expId, workerId, expTasksToComplete, assignmentId, hitId, turkSubmitTo)
-        return redirect(
-            url_for('.cur_study_info', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
-                    turkSubmitTo=turkSubmitTo, live=live))
+        day1file = _thisDir + '/data/' + expId + '/' + expId + '_subject_worker_ids_day1.csv'
+        if not os.path.exists(day1file):  # if this the first day - check that the are omnivores and are willing to repeat study
+            return redirect(
+                    url_for('.cur_study_info2', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                            turkSubmitTo=turkSubmitTo, live=live))
+        else:    # in the second day - change to:
+            return redirect(
+                url_for('.cur_study_info', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                        turkSubmitTo=turkSubmitTo, live=live))
 
 
 """
 Study information
 """
 
-
-@tasks.route("/cur_study_info", methods=["GET", "POST"])
-def cur_study_info():
+@tasks.route("/cur_study_info2", methods=["GET", "POST"])
+def cur_study_info2():
     containsAllMTurkArgs = contains_necessary_args(request.args)
     if containsAllMTurkArgs:
         [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
@@ -91,12 +101,37 @@ def cur_study_info():
         if type(completion_code) != str:
             completion_code = mturk_utils.get_completion_code()
             add_worker_notes(expId, workerId, 'completionCode', completion_code)
-        return render_template('dmstudies/cur_study_details.html')
+        return render_template('dmstudies/cur_study_details2.html')
     elif containsAllMTurkArgs:
+        is_Fed = request.form["is_Fed"]
+        return redirect(url_for('.checkWilling', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                turkSubmitTo=turkSubmitTo, live=live, isFed=is_Fed))
+    else:
+        return redirect(url_for('unauthorized_error'))
 
-        return redirect(url_for('.checkDiet', expId=expId,
-                                workerId=workerId, assignmentId=assignmentId, hitId=hitId,
-                                turkSubmitTo=turkSubmitTo, live=live))
+@tasks.route("/checkWilling/<isFed>", methods=["GET", "POST"])
+def checkWilling(isFed):
+    containsAllMTurkArgs = contains_necessary_args(request.args)
+    if containsAllMTurkArgs:
+        [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
+    if request.method == "GET" and containsAllMTurkArgs:
+        subjectId = get_subjectId(expId, workerId)
+        completion_code = get_worker_notes(expId, subjectId, 'completionCode')
+        if type(completion_code) != str:
+            completion_code = mturk_utils.get_completion_code()
+            add_worker_notes(expId, workerId, 'completionCode', completion_code)
+        if int(isFed) == 1:
+            return render_template('dmstudies/checkWillingness.html')
+        else:
+            return render_template('dmstudies/checkWillingness2.html')
+    elif containsAllMTurkArgs:
+        iswilling = request.form["is_willing"]
+        if int(iswilling) == 1:
+            return redirect(url_for('.checkDiet', expId=expId,
+                                    workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                                    turkSubmitTo=turkSubmitTo, live=live))
+        else:
+            return render_template('dmstudies/repeatExit.html')
     else:
         return redirect(url_for('unauthorized_error'))
 
@@ -116,19 +151,37 @@ def checkDiet():
         if int(is_veg) == 1:
             return render_template('dmstudies/vegExit.html')
         else:
-            subjectId = get_subjectId(expId, workerId)
-            if int(subjectId[-4:]) % 2 == 0:
-                order = 'o1'
-            else:
-                order = 'o2'
-            nextTask = expTaskOrders[expId][order][0]
-            return redirect(url_for('instructions.%s' % nextTask, demo=True, order=order, expId=expId,
-                                    workerId=workerId, assignmentId=assignmentId, hitId=hitId,
-                                    turkSubmitTo=turkSubmitTo, live=live))
+            return redirect(url_for('.cur_study_info', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                turkSubmitTo=turkSubmitTo, live=live))
     else:
         return redirect(url_for('unauthorized_error'))
 
 
+@tasks.route("/cur_study_info", methods=["GET", "POST"])
+def cur_study_info():
+    containsAllMTurkArgs = contains_necessary_args(request.args)
+    if containsAllMTurkArgs:
+        [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
+    if request.method == "GET" and containsAllMTurkArgs:
+        subjectId = get_subjectId(expId, workerId)
+        completion_code = get_worker_notes(expId, subjectId, 'completionCode')
+        if type(completion_code) != str:
+            completion_code = mturk_utils.get_completion_code()
+            add_worker_notes(expId, workerId, 'completionCode', completion_code)
+        return render_template('dmstudies/cur_study_details.html')
+    elif containsAllMTurkArgs:
+        subjectId = get_subjectId(expId, workerId)
+        print(subjectId)
+        if int(subjectId[-4:]) % 2 == 0:
+            order = 'o1'
+        else:
+            order = 'o2'
+        nextTask = expTaskOrders[expId][order][0]
+        return redirect(url_for('instructions.%s' % nextTask, demo=True, order=order, expId=expId,
+                                workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                                turkSubmitTo=turkSubmitTo, live=live))
+    else:
+        return redirect(url_for('unauthorized_error'))
 
 """
 Rate Hunger
@@ -397,13 +450,13 @@ def Qrating_task(order):
     containsAllMTurkArgs = contains_necessary_args(request.args)
     if containsAllMTurkArgs:
         [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
-
+        #workerId='A27O7H19C0WQ7T'
         if workerId_exists(expId, workerId):
             if request.method == "GET":
                 subjectId = get_subjectId(expId, workerId)
-                expVariables = get_Qratingtask_expVariables(subjectId)
+                expVariables = get_Qratingtask_expVariables_noanswer(subjectId)
 
-                return render_template('dmstudies/Qrating_task.html', demo='False', expVariables=expVariables)
+                return render_template('dmstudies/Qrating_task_noanswer.html', demo='False', expVariables=expVariables)
             else:
                 subjectId = get_subjectId(expId, workerId)
                 filePath = dataDir + expId + '/' + subjectId + '/'
@@ -416,23 +469,14 @@ def Qrating_task(order):
                 condensedExpResults = []
                 for i in range(0, len(expResults)):
                     if i % 2 == 0:  # question
+                        print(expResults[i])
                         trial = {}
                         trial['trialN'] = i / 2
                         trial['QuestionNum'] = expResults[i]['QuestionNum']
                         trial['Question'] = expResults[i]['Question']
                         trial['Answer'] = expResults[i]['Answer']
                         trial['QuestionRating'] = expResults[i]['rating']
-                    else:  # answer
-                        if trial['Answer'] == expResults[i]['Answer']:
-                            trial['AnswerRating'] = expResults[i]['rating']
-                            condensedExpResults.append(trial)
-                        else:
-                            correctFormat = False
-                if correctFormat:
-                    results_to_csv(expId, subjectId, filePath, 'QRatings.csv', condensedExpResults, {})
-
-                else:  # raw results
-                    results_to_csv(expId, subjectId, filePath, 'QRawRatings.csv', expResults, {})
+                    results_to_csv(expId, subjectId, filePath, 'QRatings.csv', expResults, {})
                 nextTask = get_next_task(name, expTaskOrders[expId][order])
                 return redirect(url_for(nextTask, expId=expId, workerId=workerId, assignmentId=assignmentId,
                                         hitId=hitId, turkSubmitTo=turkSubmitTo, live=live,order = order))
@@ -601,46 +645,15 @@ def last_meal(order):
             results_to_csv(expId, subjectId, filePath, 'LastMeal.csv', results, {})
             results_to_csv(expId, subjectId, filePath, 'LastMeal2.csv', q_and_a, {})
 
-            return redirect(url_for('.MEQ', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
-                    turkSubmitTo=turkSubmitTo, live=live, order=order))
+            day1file = _thisDir + '/data/' + expId + '/' + expId + '_subject_worker_ids_day1.csv'
+            if not os.path.exists(day1file): # if this the first day - do all te Qs
+                return redirect(url_for('.IEQ', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                        turkSubmitTo=turkSubmitTo, live=live, order=order))
+            else: # if it's the second day. skip the long questionnaire sand just do the demo as a backup for matching subjet IDs
+                return redirect(
+                    url_for('.demographicq', expId=expId, workerId=workerId, assignmentId=assignmentId,
+                            hitId=hitId, turkSubmitTo=turkSubmitTo, live=live, order=order))
     return redirect(url_for('page_not_found'))
-
-@tasks.route("/MEQ/<order>", methods=["GET", "POST"])
-def MEQ(order):
-    name = "MEQ"
-    containsAllMTurkArgs = contains_necessary_args(request.args)
-    if containsAllMTurkArgs:
-        [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
-        subjectId = get_subjectId(expId, workerId)
-        info = get_MEQ()
-        if request.method == "GET":
-            options = info[0][list(info[0].keys())[0]]
-            widthPercent = 70.0 / len(options)
-            return render_template('dmstudies/MEQ.html', info=info,
-                                   instructions="You will now be asked some questions about your eating habits. For each item, please check the answer that best characterizes your attitudes or behaviors",
-                                   category=name,
-                                   widthPercent=widthPercent)
-        else:  # in request.method == "POST"
-            q_and_a = []  # list of dictionaries where questions are keys and answers are values
-            nQuestions = len(info)
-            for i in range(0, nQuestions):
-                tmp = {}
-                tmp['QuestionNum'] = i + 1
-                tmp['Question'] = request.form['q' + str(i + 1)]
-                if 'a' + str(i + 1) in request.form:
-                    tmp['Answer'] = request.form['a' + str(i + 1)]  # set keys and values in dictionary
-                else:
-                    tmp['Answer'] = ''
-                q_and_a.append(tmp)
-
-            filePath = dataDir + expId + '/' + subjectId + '/'
-            add_subfile_worker_notes(expId, subjectId, 'completedMEQuestionnaire', True)
-            results_to_csv(expId, subjectId, filePath, 'MEQuestionnaireResults.csv', q_and_a, {})
-
-            return redirect(url_for('.IEQ', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
-                                    turkSubmitTo=turkSubmitTo, live=live, order=order))
-    return redirect(url_for('page_not_found'))
-
 
 @tasks.route("/IEQ/<order>", methods=["GET", "POST"])
 def IEQ(order):
@@ -674,10 +687,48 @@ def IEQ(order):
             add_subfile_worker_notes(expId, subjectId, 'completedIEQuestionnaire', True)
             results_to_csv(expId, subjectId, filePath, 'IEQuestionnaireResults.csv', q_and_a, {})
 
-            return redirect(url_for('.EATq', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+            return redirect(url_for('.AEBQ', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
                                     turkSubmitTo=turkSubmitTo, live=live, order=order))
     return redirect(url_for('page_not_found'))
 
+
+"""adult eating behavior"""
+
+@tasks.route("/AEBQ", methods=["GET", "POST"])
+def AEBQ():
+    name = "AEBQ"
+    containsAllMTurkArgs = contains_necessary_args(request.args)
+    if containsAllMTurkArgs:
+        [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
+        subjectId = get_subjectId(expId, workerId)
+        info = get_AEBQ()
+        if request.method == "GET":
+            options = info[0][list(info[0].keys())[0]]
+            widthPercent = 70.0 / len(options)
+            return render_template('dmstudies/AEBQ.html', info=info,
+                                   instructions="For each item, please check the answer that best characterizes your attitudes or behaviors.",
+                                   category=name,
+                                   widthPercent=widthPercent)
+        else:  # in request.method == "POST"
+            q_and_a = []  # list of dictionaries where questions are keys and answers are values
+            nQuestions = len(info)
+            for i in range(0, nQuestions):
+                tmp = {}
+                tmp['QuestionNum'] = i + 1
+                tmp['Question'] = request.form['q' + str(i + 1)]
+                if 'a' + str(i + 1) in request.form:
+                    tmp['Answer'] = request.form['a' + str(i + 1)]  # set keys and values in dictionary
+                else:
+                    tmp['Answer'] = ''
+                q_and_a.append(tmp)
+
+            filePath = dataDir + expId + '/' + subjectId + '/'
+            add_subfile_worker_notes(expId, subjectId, 'completedAEBQuestionnaire', True)
+            results_to_csv(expId, subjectId, filePath, 'AEBQuestionnaireResults.csv', q_and_a, {})
+
+            return redirect(url_for('.EATq', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                                    turkSubmitTo=turkSubmitTo, live=live, order=order))
+    return redirect(url_for('page_not_found'))
 
 @tasks.route("/EATq/<order>", methods=["GET", "POST"])
 def EATq(order):
