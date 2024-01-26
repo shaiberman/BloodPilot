@@ -556,6 +556,21 @@ def get_IEQ():
         new_info.append({q: options})
     return new_info
 
+def get_AEBQ():
+    info = pd.read_csv(_thisDir + '/AEBQ.csv', delimiter=',', encoding="utf-8-sig")
+    questions = info['Question']
+    info = info.set_index('Question')
+    new_info = []
+    for j in range(0, len(questions)):
+        q = questions[j]
+        tmp = info.loc[q].values
+        options = []
+        for i in tmp:
+            if (type(i) == str) or (type(i) == bytes):  # remove nan values
+                options.append(i)
+        new_info.append({q: options})
+    return new_info
+
 def get_comprehensiontestinfo():
     info = pd.read_csv(_thisDir + '/ComprehensionTest.csv', delimiter=',', encoding="utf-8-sig")
     questions = info['Question']
