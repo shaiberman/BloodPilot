@@ -19,20 +19,9 @@ def get_task_results_exists(subjectId, resultsfilename):
 """
 Given name of current task and list of tasks, return the task that should be next
 If task is final task, return 'thankyou' to route to thank you page
-
-For example:
-    x = 'auction'
-    y = 'choicetask'
-    z = 'hello'
-    tasks = ['auction','choicetask'] 
-    print(get_next_task('auction', tasks))		# return 'choicetask'
-    print(get_next_task('choicetask', tasks)) 	# return 'thankyou'
-    print(get_next_task('hello', tasks)) 		# return None
-
-*** For url_for
+For example:, given tasks = ['auction','choicetask'] 
+    print(get_next_task('auction', tasks))		# return 'choicetas
 """
-
-
 def get_next_task(currentTask, taskOrder):
     for i in range(0, len(taskOrder)):
         task = taskOrder[i]
@@ -78,10 +67,18 @@ def get_pay_amounts():
     return wait
 
 '''for RATING'''
-# get 200 questions. 30 food. hopeflly mostly unknown
-def get_trivia():
+
+def get_trivia_all():
     questions = pd.read_csv(_thisDir + "/Kanga_TriviaList_goodQs.csv", usecols=['QuestionNum', 'Question', 'AnswerUse', 'IsFood'], encoding='unicode_escape')
     questions.columns = ['QuestionNum', 'Question', 'Answer','isFood']
+    questions = questions.sample(frac=1).reset_index(drop=True) # randomize
+    return questions
+
+# get 200 questions. 30 food. hopeflly mostly unknown
+def get_trivia(subjectId):
+    questions_all = get_trivia_all()
+    questions = get_unused_questions(subjectId, questions_all) # will removed used questions from the pool
+
     # separate food and non food
     foodsQuestions = questions.loc[questions['isFood'] > 0, ['QuestionNum', 'Question', 'Answer']]
     genQuestions = questions.loc[questions['isFood'] == 0, ['QuestionNum', 'Question', 'Answer']]
@@ -122,7 +119,7 @@ def get_Qratingtask_expVariables_noanswer(subjectId):
     # overall there are about 460, out of ~70 are food related.
     # this should gets 200 Qs, 30 of which are food Qs.
     # I should put in place something for the second time this is done.
-    questions = get_trivia()
+    questions = get_trivia(subjectId)
     questions.to_dict('records')
     # how many Qs do i want?
     trivia_dict, trivia_qnum_dict = get_trivia_as_dicts(questions)
@@ -148,6 +145,25 @@ def get_Qratingtask_expVariables_noanswer(subjectId):
         trial['rs_labelNames'] = rs_labelNames
         expVariables.append(trial)
     return expVariables
+
+
+''' for the second time around'''
+def get_questions_used_in_rating_task_day1(subjectId):
+    datafile = os.path.join(dataDir, expId, 'day1rating', subjectId + '_QRatings_day1.csv')
+    if os.path.exists(datafile):
+        df = pd.read_csv(datafile)
+        questions = df['Question'].values.tolist()
+        return questions
+    print("File not found")
+    return []
+
+def get_unused_questions(subjectId, questions):
+    old_questions=get_questions_used_in_rating_task_day1(subjectId)
+    #old_questions = get_questions_used_in_wtp_task(subjectId)
+    unused_questions = questions.loc[~questions['Question'].isin(old_questions)]
+    unused_questions = unused_questions.sample(frac=1).reset_index(drop=True)
+    return unused_questions
+
 
 '''WTP'''
 # only use the 80 top rated question that were unknown!
@@ -181,43 +197,8 @@ def get_wtp_trivia(subjectId):
     random.shuffle(questions) # unnecessary i believe
     return questions
 
-''' for the second time around'''
-def get_questions_used_in_wtp_task(subjectId):
-    datafile = os.path.join(dataDir, expId, subjectId, subjectId + '_WillingnessToPayResults.csv')
-    if os.path.exists(datafile):
-        df = pd.read_csv(datafile)
-        questions = df['Question'].values.tolist()
-        return questions
-    print("File not found")
-    return []
 
-def get_questions_used_in_rating_task_day1(subjectId):
-    datafile = os.path.join(dataDir, expId, 'day1rating', subjectId + '_QRatings_day1.csv')
-    if os.path.exists(datafile):
-        df = pd.read_csv(datafile)
-        questions = df['Question'].values.tolist()
-        return questions
-    print("File not found")
-    return []
-
-
-def get_trivia_all():
-    questions = pd.read_csv(_thisDir + "/Kanga_TriviaList_goodQs.csv", usecols=['QuestionNum', 'Question', 'AnswerUse', 'IsFood'], encoding='unicode_escape')
-    questions.columns = ['QuestionNum', 'Question', 'Answer','isFood']
-    questions = questions.sample(frac=1).reset_index(drop=True) # randomize
-
-    return questions
-
-
-def get_unused_questions(subjectId):
-    questions = get_trivia_all()
-    old_questions=get_questions_used_in_rating_task_day1(subjectId)
-    #old_questions = get_questions_used_in_wtp_task(subjectId)
-    unused_questions = questions.loc[~questions['Question'].isin(old_questions)]
-    unused_questions = unused_questions.sample(frac=1).reset_index(drop=True)
-    return unused_questions
-
-
+'''compreension test'''
 def get_comprehensiontestinfo_WTP() -> object:
     info = pd.read_csv(_thisDir + '/ComprehensionTestWTP.csv', delimiter=',', encoding="utf-8-sig")
     questions = info['Question']
@@ -561,7 +542,7 @@ def get_MEQ():
     return new_info
 
 def get_IEQ():
-    info = pd.read_csv(_thisDir + '/IEQ.csv', delimiter=',', encoding="utf-8-sig")
+    info = pd.read_csv(_thisDir + '/IEQ2.csv', delimiter=',', encoding="utf-8-sig")
     questions = info['Question']
     info = info.set_index('Question')
     new_info = []

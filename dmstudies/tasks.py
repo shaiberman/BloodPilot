@@ -20,6 +20,7 @@ expTasksToComplete = {}
 # o1: order 1, o2: order 2
 # o1 - food rating and choice -> curiosity (wtp) -> perceptual choice
 # o2 - curiosity (wtp) -> food rating and choice -> perceptual choice
+'''
 expTaskOrders = {
     'HRV': {"o1": ['rating_task_instructions','Qrating_task',
                    'full_instructions_wtp','comprehension_test_wtp',
@@ -35,6 +36,12 @@ expTaskOrders = {
                    'main_task_instructions_wtp', 'task_wtp',
                    'rdcolor_instructions', 'rdcolor_task', 'color_questionnaire',
                    'questionnaire_instructions',  'ratehunger']}
+}
+'''
+# for the blood pilot only have a hunger rating.. and then on ssecond day also the eating disorder
+expTaskOrders = {
+    'HRV': {"o1": ['ratehunger'],
+            "o2": ['ratehunger']}
 }
 
 day1file = _thisDir + '/data/' + expId + '/' + expId + '_subject_worker_ids_day1.csv'

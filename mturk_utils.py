@@ -49,5 +49,8 @@ def get_necessary_args(args):
 
 def get_completion_code():
 	# from https://pythontips.com/2013/07/28/generating-a-random-string/
-	return ''.join([random.choice(string.ascii_letters + string.digits) for n in range(16)])
+	# if we want separate random codes - uncomment the follow:ng
+	# return ''.join([random.choice(string.ascii_letters + string.digits) for n in range(16)])
 
+    # otherwise:
+	return 'c692fdc2e0'
