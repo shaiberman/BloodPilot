@@ -6,9 +6,9 @@ from store_data import *
 from manage_subject_info import *
 import mturk_utils
 
-expId = 'HRV'
+expId = 'BP'
 
-tasks = Blueprint('tasks', __name__, url_prefix='/HRV')
+tasks = Blueprint('tasks', __name__, url_prefix='/BP')
 
 _thisDir = os.path.dirname(os.path.abspath(__file__))#.decode(sys.getfilesystemencoding())
 _parentDir = os.path.abspath(os.path.join(_thisDir, os.pardir))

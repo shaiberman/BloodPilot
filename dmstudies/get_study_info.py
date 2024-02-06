@@ -23,8 +23,8 @@ def get_wtp_pay_amount(expId, subjectId):
         totalAmount = np.sum(payTrialAmounts)
     return totalAmount
 
-expId = 'HRV'
-dataDir = 'C:/Users/shaib/PycharmProjects/HungerXinfo/data'
+expId = 'BP'
+dataDir = 'C:/Users/shaib/PycharmProjects/BloodPilot/data'
 subdirs = os.listdir(os.path.join(dataDir,expId))
 subdirs.sort()
 
