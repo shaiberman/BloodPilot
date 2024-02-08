@@ -53,6 +53,19 @@ def route_to_site(expId,newRoute):
     containsAllMTurkArgs = contains_necessary_args(request.args)
     if containsAllMTurkArgs:
         [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
+
+        '''##################################'''
+        # we will let the subject input their name for worker ID
+        info = {}  # a dictionary with subject info
+        info['Subject ID'] = 'P02'
+        info['Fasting'] = 'sb'
+        dlg = gui.DlgFromDict(info, sortKeys=False)  # (and from psychopy import gui at top of script)
+        if not dlg.OK:
+            print('something not ok')
+            core.quit()
+        workerId =  info['Subject ID']
+        '''######################################'''
+
         subjectId = get_subjectId(expId, workerId)
     if 'error_message' in request.args:
         error_message = request.args.get('error_message')

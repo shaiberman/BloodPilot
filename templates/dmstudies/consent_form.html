@@ -6,85 +6,87 @@
 	<link href="/static/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
  </head>
+
 <body style="margin:40px 30px;">
 
-<p>Thank you for your interest in our research. Please read the following information carefully.</p>
-<b><p>
-Columbia University Electronic Consent Form IRB Protocol: AAAO5907<br>
-Principal Investigator: Daphna Shohamy.<br>
-Behavioral Studies of Learning, Memory and Decision Making with Food Informed Consent Form
-</p></b>
-
+<p><b>You're a legend for doing this.</b></p>
 <p>
-	We invite you to participate in a research study investigating learning, memory and decision making.<br>
-	In this study, you will play computer games, answer questionnaires and/or take standardized cognitive tests.
+If you're getting your blood tested today, please fill out the following and rate your hunger, and ignore the rest of the Questionnaires. <br>
+Otherwise, please continue to the questionnaires and fill them out.<br>
+Love ya
 </p>
 
-<p><b>Confidentiality</b></p>
-<p>
-	Your participation in this study will remain confidential. However, the following individuals and/or agencies will be able to look at, copy, use, and share your research information:<br>
-	<font size="-1.5">
-		-The investigator, Columbia University Medical Center, and other medical professionals who may be evaluating the study <br>
-		-Authorities from Columbia University, including the Institutional Review Board ('IRB')<br>
-		-The Federal Office of Human Research Protections ('OHRP')<br>
-		-Our funding sponsors: The McKnight Foundation, the Klarman Family Foundation, and the National Science Foundation<br>
-	</font>
-	Data will be collected, analyzed and stored with an alphanumeric code and never kept with any information that could be used to identify participants. All documents with identifying information will be kept separate from study data in a locked file cabinet or password protected electronic files.
-</p>
-<p>Your authorization to use and share the information collected for this research purpose does not have an expiration (ending) date.</p>
-<p>Your Amazon Mechanical Turk (Mturk) worker ID (i.e., the 14-character sequence of letters and numbers used to identify workers) will be kept separate from study data in a password protected electronic file.</p>
+  	<form method="POST" style="padding: 0px;">
 
-<p><b>Risks and Benefits</b></p>
-<p>There are no personal benefits to completing this study. However, possible broader benefits may be that you will contribute to a greater understanding of underlining cognitive processes in learning, memory and decision making.</p>
-<p>There is a risk of loss of private information; this risk always exists, but there are procedures in place to minimize the risk.</p>
-
-<p><b>Compensation</b></p>
-<p>If you agree to take part in this research study, we will pay you for completion of the task at the posted rate on Amazon Mechanical Turk. Payment will be given upon verification that the survey was completed and response accuracy verified. This will occur as soon as possible, dependent upon availability of a member of our research staff, this may take up to 72 hours for both verification and payment through Amazon.</p>
-<p>Tax law may require the Columbia University Finance Department to report the amount of payment you receive from Columbia University to the Internal Revenue Service (IRS) or other agencies, as applicable. Generally, this reporting would take place if you receive payments that equal $600 or more from Columbia University in a calendar year. You would be responsible for the payment of any tax that may be due.</p>
-<p>You will be paid for your participation at the posted rate. Compensation is contingent upon response completion. You are required to complete at least 90% of the task or the HIT will be rejected and you will not receive compensation. To be specific, we will check if responses were made during the task and ensure that a response was made on at least 90% of trials.</p>
-
-<p><b>Contact Information</b></p>
-
-<p>Taking part in this study is your choice. You can decide not to take part in or stop being in the study at any time for any reason (even after you agree to this consent form). However, even if you revoke (take back) this consent and authorization, the researchers may continue to use and disclose the information they have already collected.</p>
-<p>If you have any questions or concerns about this study, please contact any member of the research team, including the Principal Investigator, Dr. Daphna Shohamy (212-854-7560).</p>
-<p>If at any time you have questions or concerns about your rights or welfare as a research subject, please contact the Columbia University – Morningside Institutional Review Board. The Institutional Review Board is a committee organized to protect the rights and welfare of human subjects involved in research and operates independent of the research team.</p>
-
-<p>
-	Columbia University – Morningside Institutional Review Board<br>
-	615 West 131st Street<br>
-	212-851-7040<br>
-</p>
-
-<p>
-Mental Health Resources <br>
-Your participation in this study will not include psychological counseling. In the event you seek such services, please contact one of the centers below:
-</p>
-
-<p>
-	National Hopeline Network:<br>
-	1-800-784-2433 <br>
-</p>
-<p>
-	National Suicide Prevention Lifeline:<br>
-	1-800-273-8255<br>
-</p>
-
-<p>
-	Behavioral Health Treatment Services Locator: <a href="https://findtreatment.samhsa.gov">https://findtreatment.samhsa.gov</a>
-</p>
-
-<p><img src="{{ url_for('static', filename = 'dmstudies/AAAS0166_IRB_logo.png') }}" width="350"></p>
-<br>
-<p>
-<b>If you agree to participate, please proceed to the survey or task...</b>
-</p>
 	<center>
-	<form method="POST">
-		<p>By clicking continue, you agree to participate in this study.</p>
-		<input type="submit" value="Continue" class="btn btn-default">
-		<br>
+	<p>What is your subject ID (ask Shai)
+	<label for="ID"> </label>
+	<answer name="ID" required>
+		<input type="text" name="ID"></input>
+	</answer>
+	</p>
+	</center>
+	<br>
+
+	<center>
+	<p>How long has it been since your last meal (in hours)?
+
+	<label for="HoursSinceMeal"> </label>
+	<select name="HoursSinceMeal" required>
+		<option selected disabled hidden value=''></option>
+		{% for i in range(1,24) %}
+			<option value="{{ i|string }}">{{ i|string }}</option>
+		{% endfor %}
+	</select>
+	</p>
+	</center>
+	<br>
+
+	<center>
+	<p>When do you expect to eat your next meal (in how many hours)?
+
+	<label for="HoursToMeal"> </label>
+	<select name="HoursToMeal" required>
+		<option selected disabled hidden value=''></option>
+		{% for i in range(1,24) %}
+			<option value="{{ i|string }}">{{ i|string }}</option>
+		{% endfor %}
+	</select>
+	</p>
+	<br>
+	</center>
+
+	<center>
+		<p>What time is it?
+
+ 	<select name="time" required>
+		<option selected disabled hidden value=''></option>
+		{% for i in range(1,13) %}
+			<option value="{{ i|string }}">{{ i|string }}</option>
+		{% endfor %}
+	</select>:
+	<select name="minute" required>
+		<option selected disabled hidden value=''></option>
+		<option value="00">00</option>
+		<option value="15">15</option>
+		<option value="30">30</option>
+		<option value="45">45</option>
+	</select>
+	<select name="time_of_day" required>
+		<option selected disabled hidden value=''></option>
+		<option value="AM">AM</option>
+		<option value="PM">PM</option>
+	</select>
+	</p>
+	<br>
+	</center>
+
+
+	<br>
+	<center><input type="submit" value="Submit" class="btn btn-default"></center>
+	<br>
+
+
 	</form>
-</center>
-<br><br>
 </body>
 </html>

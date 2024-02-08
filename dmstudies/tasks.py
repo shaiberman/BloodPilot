@@ -12,7 +12,7 @@ tasks = Blueprint('tasks', __name__, url_prefix='/BP')
 
 _thisDir = os.path.dirname(os.path.abspath(__file__))#.decode(sys.getfilesystemencoding())
 _parentDir = os.path.abspath(os.path.join(_thisDir, os.pardir))
-dataDir = _parentDir + '/pilotdata/'
+dataDir = _parentDir + '/data/'
 
 expTasksToComplete = {}
 
@@ -25,13 +25,6 @@ expTaskOrders = {
     'HRV': {"o1": ['ratehunger'],
             "o2": ['ratehunger']}
 }
-
-day1file = _thisDir + '/data/' + expId + '/' + expId + '_subject_worker_ids_day1.csv'
-if not os.path.exists(day1file):  #  day 1  - repeat food rating
-    repeatFoodRating = {'HRV': True}
-else:                             #  day 2  - repeat food rating
-    repeatFoodRating = {'HRV': False}
-
 
 @tasks.route("/", methods=["GET", "POST"])
 @tasks.route("/consent_form", methods=["GET", "POST"])
@@ -61,16 +54,30 @@ def consent_form():
                 url_for('.foodrating_demo_instructions', expId=expId, workerId=workerId, assignmentId=assignmentId,
                         hitId=hitId, turkSubmitTo=turkSubmitTo, live=live))
         else:
+
             # in testing - accessed site through www.calkins.psych.columbia.edu
-            workerId = 'testWorker' + str(random.randint(1000, 10000))
+            # workerId = 'testWorker' + str(random.randint(1000, 10000))
 #            workerId = 'A27O7H19C0WQ7T'
             assignmentId = 'testAssignment' + str(random.randint(10000, 100000))
             hitId = 'testHIT' + str(random.randint(10000, 100000))
             turkSubmitTo = 'www.calkins.psych.columbia.edu'
             live = False
-            store_subject_info(expId, workerId, expTasksToComplete, assignmentId, hitId, turkSubmitTo)
+            day = store_subject_info(expId, workerId, expTasksToComplete, assignmentId, hitId, turkSubmitTo)
+
+            workerId = request.form['ID']
+            Hours1 = request.form['HoursSinceMeal']
+            Hours2 = request.form['HoursToMeal']
+            time = request.form['time']
+            minute = request.form['minute']
+            ampm = request.form['time_of_day']
+            results = [{'subID': workerId}, {'hours_since_last_meal': Hours1}, {'hours_to_next_meal': Hours2},
+                       {'time_of_study': time + minute + ampm}]
+
+            filePath = dataDir + expId + '/' + workerId + '/'
+            results_to_csv(expId, workerId, filePath, 'subInfo_'+day+'.csv', results, {})
+
             return redirect(
-                url_for('.ratehunger', ratingOrder=1, num=2, expId=expId, workerId=workerId, assignmentId=assignmentId,
+                url_for('.ratehunger', ratingOrder=1, day=day, expId=expId, workerId=workerId, assignmentId=assignmentId,
                         hitId=hitId,
                         turkSubmitTo=turkSubmitTo, live=live, order=order))
 
@@ -86,8 +93,8 @@ num: "1" for first rating, "2" for second rating
 """
 
 
-@tasks.route("/<ratingOrder>/ratehunger/<num>/<order>", methods=["GET", "POST"])
-def ratehunger(num, ratingOrder, order):
+@tasks.route("/<ratingOrder>/ratehunger/<day>/<order>", methods=["GET", "POST"])
+def ratehunger(day, ratingOrder, order):
     containsAllMTurkArgs = contains_necessary_args(request.args)
     if containsAllMTurkArgs:
         [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
@@ -95,72 +102,27 @@ def ratehunger(num, ratingOrder, order):
         return render_template('dmstudies/ratehunger.html', ratingOrder=ratingOrder)
     elif containsAllMTurkArgs:
         subjectId = get_subjectId(expId, workerId)
-        filePath = dataDir + expId + '/' + subjectId + '/'
+        print(['subjectid: ', subjectId])
+        print(['workerId: ', workerId])
+        filePath = dataDir + expId + '/' + workerId + '/'
         hungerRatingResults = json.loads(request.form['hungerRatingResults'])
-        results_to_csv(expId, subjectId, filePath, 'HungerRating' + str(num) + '.csv', hungerRatingResults, {})
-        return redirect(
-            url_for('.last_meal', order=order, expId=expId, workerId=workerId, assignmentId=assignmentId,
-                    hitId=hitId,
-                    turkSubmitTo=turkSubmitTo, live=live))
+        results_to_csv(expId, workerId, filePath, 'HungerRating_day' + str(day) + '.csv', hungerRatingResults, {})
+        print(type(day))
+
+        if int(day) == 2:  # if this the first day - do all te Qs
+            return redirect(url_for('.IEQ', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                                    turkSubmitTo=turkSubmitTo, live=live, order=order))
+        elif int(day) == 1:  # if it's the second day. skip the long questionnaire sand just do the demo as a backup for matching subjet IDs
+            return redirect(
+                url_for('.thankyou', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
+                        turkSubmitTo=turkSubmitTo, live=live, order=order))
+
     else:
         return redirect(url_for('unauthorized_error'))
 
 """
 QUESTIONNAIRES
 """
-
-@tasks.route("/last_meal/<order>", methods=["GET", "POST"])
-def last_meal(order):
-    containsAllMTurkArgs = contains_necessary_args(request.args)
-    if containsAllMTurkArgs:
-        [workerId, assignmentId, hitId, turkSubmitTo, live] = get_necessary_args(request.args)
-        subjectId = get_subjectId(expId, workerId)
-        info = get_hungerq()
-        if request.method == "GET":
-            return render_template('dmstudies/last_meal.html', info=info)
-        else:
-            q_and_a = []  # list of dictionaries where questions are keys and answers are values
-            nQuestions = len(info)
-            for i in range(0, nQuestions):
-                tmp = {}
-                tmp['QuestionNum'] = i + 1
-                tmp['Question'] = request.form['q' + str(i + 1)]
-                if 'a' + str(i + 1) in request.form:
-                    tmp['Answer'] = request.form['a' + str(i + 1)]  # set keys and values in dictionary
-                else:
-                    tmp['Answer'] = ''
-                q_and_a.append(tmp)
-            Hours1 = request.form['HoursSinceMeal']
-            Hours2 = request.form['HoursToMeal']
-            time = request.form['time']
-            minute = request.form['minute']
-            ampm = request.form['time_of_day']
-            results = [{'hours_since_last_meal': Hours1}, {'hours_to_next_meal': Hours2},{'time_of_study':time+minute+ampm}]
-            q_and_a = []  # list of dictionaries where questions are keys and answers are values
-            nQuestions = len(info)
-            for i in range(0, nQuestions):
-                tmp = {}
-                tmp['QuestionNum'] = i + 1
-                tmp['Question'] = request.form['q' + str(i + 1)]
-                if 'a' + str(i + 1) in request.form:
-                    tmp['Answer'] = request.form['a' + str(i + 1)]  # set keys and values in dictionary
-                else:
-                    tmp['Answer'] = ''
-                q_and_a.append(tmp)
-
-            filePath = dataDir + expId + '/' + subjectId + '/'
-            results_to_csv(expId, subjectId, filePath, 'LastMeal.csv', results, {})
-            results_to_csv(expId, subjectId, filePath, 'LastMeal2.csv', q_and_a, {})
-
-            day1file = _thisDir + '/data/' + expId + '/' + expId + '_subject_worker_ids_day1.csv'
-            if not os.path.exists(day1file): # if this the first day - do all te Qs
-                return redirect(url_for('.IEQ', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
-                        turkSubmitTo=turkSubmitTo, live=live, order=order))
-            else: # if it's the second day. skip the long questionnaire sand just do the demo as a backup for matching subjet IDs
-                return redirect(
-                    url_for('.thank_you', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
-                            turkSubmitTo=turkSubmitTo, live=live, order=order))
-    return redirect(url_for('page_not_found'))
 
 @tasks.route("/IEQ/<order>", methods=["GET", "POST"])
 def IEQ(order):
@@ -190,8 +152,8 @@ def IEQ(order):
                     tmp['Answer'] = ''
                 q_and_a.append(tmp)
 
-            filePath = dataDir + expId + '/' + subjectId + '/'
-            add_subfile_worker_notes(expId, subjectId, 'completedIEQuestionnaire', True)
+            filePath = dataDir + expId + '/' + workerId + '/'
+            add_subfile_worker_notes(expId, workerId, 'completedIEQuestionnaire', True)
             results_to_csv(expId, subjectId, filePath, 'IEQuestionnaireResults.csv', q_and_a, {})
 
             return redirect(url_for('.AEBQ', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
@@ -229,8 +191,8 @@ def AEBQ():
                     tmp['Answer'] = ''
                 q_and_a.append(tmp)
 
-            filePath = dataDir + expId + '/' + subjectId + '/'
-            add_subfile_worker_notes(expId, subjectId, 'completedAEBQuestionnaire', True)
+            filePath = dataDir + expId + '/' + workerId + '/'
+            add_subfile_worker_notes(expId, workerId, 'completedAEBQuestionnaire', True)
             results_to_csv(expId, subjectId, filePath, 'AEBQuestionnaireResults.csv', q_and_a, {})
 
             return redirect(url_for('.IPAQ', expId=expId, workerId=workerId, assignmentId=assignmentId, hitId=hitId,
@@ -267,8 +229,8 @@ def IPAQ(order):
                        ['SittingHours', SittingHours],['SittingMinutes', SittingMinutes]]
 
 
-            filePath = dataDir + expId + '/' + subjectId + '/'
-            add_subfile_worker_notes(expId, subjectId, 'completedIPAQuestionnaire', True)
+            filePath = dataDir + expId + '/' + workerId + '/'
+            add_subfile_worker_notes(expId, workerId, 'completedIPAQuestionnaire', True)
             results_to_csv(expId, subjectId, filePath, 'IPAQuestionnaireResults.csv', results, {})
 
             return redirect(

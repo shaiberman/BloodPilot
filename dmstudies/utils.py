@@ -8,7 +8,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))#.decode(sys.getfilesysteme
 _parentDir = os.path.abspath(os.path.join(_thisDir, os.pardir))
 dataDir = _parentDir + '/data/'
 
-expId = 'HRV'
+expId = 'BP'
 foodStimFolder = '/static/foodstim60/'
 
 
